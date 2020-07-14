@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [alisha rushits](https://up.htmlacademy.ru/adaptive/20/user/1107511).
-* Наставник: [Александ Карташов](https://htmlacademy.ru/profile/id77080).
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
