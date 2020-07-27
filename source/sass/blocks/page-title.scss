@@ -1,0 +1,12 @@
+.page-title {
+  font-size: 27px;
+  line-height: 30px;
+  @include font;
+  text-align: center;
+}
+
+.page-title--bg-gray {
+  width: 320px;
+  padding: 74px 0px;
+  background-color: $gray;
+}

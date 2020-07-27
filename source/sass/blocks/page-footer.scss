@@ -1,0 +1,6 @@
+.page-footer {
+  width: 320px;
+  height: 160px;
+  background-color: $gray;
+  @include list;
+}

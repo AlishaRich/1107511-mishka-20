@@ -1,0 +1,19 @@
+.card__title {
+  font-size: 17px;
+  line-height: 24px;
+  @include font;
+}
+
+.card__text {
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: left;
+  color: $text-color;
+}
+
+.card__price {
+  font-size: 15px;
+  line-height: 24px;
+  @include font;
+}

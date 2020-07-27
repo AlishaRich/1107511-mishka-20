@@ -1,0 +1,18 @@
+.product-groups__item {
+  width: 320px;
+}
+
+.product-groups__item:first-child {
+  background-color: $light-green;
+}
+
+.product-groups__item:last-child {
+  background-color: $green;
+}
+
+.product-groups__link {
+  font-size: 19px;
+  line-height: 24px;
+  @include font;
+  color: $white;
+}

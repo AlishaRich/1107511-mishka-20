@@ -1,0 +1,19 @@
+.video__title {
+  font-size: 17px;
+  line-height: 24px;
+  @include font;
+}
+
+.video__text {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: left;
+  color: $text-color;
+}
+
+.video__button-buy {
+  font-size: 17px;
+  line-height: 16px;
+  @include button-text;
+}
