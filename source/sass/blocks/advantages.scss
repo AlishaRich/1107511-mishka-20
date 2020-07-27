@@ -1,10 +1,12 @@
 .advantages {
   color: $black;
+
   @include list;
 }
 
 .advantages__item {
   font-size: 17px;
   line-height: 20px;
+
   @include font;
 }

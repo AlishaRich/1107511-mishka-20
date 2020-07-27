@@ -9,5 +9,6 @@
 .order-form__button-send {
   font-size: 17px;
   line-height: 16px;
+
   @include button-text;
 }

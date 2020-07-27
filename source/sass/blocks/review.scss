@@ -1,6 +1,7 @@
 .review__title {
   font-size: 25px;
   line-height: 30px;
+
   @include font;
 }
 
@@ -16,6 +17,7 @@
 .review__contact {
   font-size: 17px;
   line-height: 30px;
+
   @include font;
 }
 
@@ -27,5 +29,6 @@
 .review__button-feedback {
   font-size: 18px;
   line-height: 20px;
+
   @include button-text;
 }

@@ -1,12 +1,14 @@
 .product-card__title {
   font-size: 25px;
   line-height: 30px;
+
   @include font;
 }
 
 .product-card__subtitle {
   font-size: 17px;
   line-height: 20px;
+
   @include font;
   color: $light-green;
 }
@@ -38,5 +40,6 @@
 .product-card__button {
   font-size: 17px;
   line-height: 20px;
+
   @include button-text;
 }

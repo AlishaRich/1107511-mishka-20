@@ -1,11 +1,13 @@
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
+
   @include font;
 }
 
-.contacts__button-mail{
+.contacts__button-mail {
   font-size: 18px;
   line-height: 20px;
+
   @include button-text;
 }

@@ -5,6 +5,7 @@
 .form-block__legend {
   font-size: 17px;
   line-height: 16px;
+
   @include font;
   color: $light-green;
   text-transform: uppercase;
@@ -13,12 +14,14 @@
 .form-block__label {
   font-size: 17px;
   line-height: 18px;
+
   @include font;
 }
 
 .form-block__input {
   font-size: 17px;
   line-height: 18px;
+
   @include font;
   font-weight: normal;
 }
@@ -26,6 +29,7 @@
 .form-block--tel .form-block__input {
   font-size: 19px;
   line-height: 18px;
+
   @include font;
   font-weight: normal;
 }
