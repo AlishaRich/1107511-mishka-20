@@ -1,8 +1,12 @@
 .index-box {
-  background: url("../img/hero-mobile@1x.jpg") 50% 0 no-repeat;
+  background: url("../img/hero-mobile@1x.jpg") 50% 45% no-repeat;
   background-color: $gray-back;
   width: 320px;
-  height: 506px;
+  outline: 1px solid darkviolet;
+}
+
+.index-box__title {
+  padding: 73px 20px 120px;
 }
 
 .index-box__list {

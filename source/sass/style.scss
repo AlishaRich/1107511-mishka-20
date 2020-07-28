@@ -1,17 +1,6 @@
-body {
-  width: 320px;
-  background: white;
-  font-family: "Open Sans", "Helvetica", sans-serif;
-  outline: 1px solid darkgreen;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
 @import "variables";
 @import "mixins";
+@import "global";
 @import "blocks/index-box";
 @import "blocks/page-footer";
 @import "blocks/nav-list";
@@ -29,5 +18,10 @@ a {
 @import "blocks/develop";
 @import "blocks/card";
 @import "blocks/video";
-@import "blocks/order-text";
+@import "blocks/order";
 @import "blocks/order-form";
+@import "blocks/pop-up";
+@import "blocks/size-form";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/product-section";

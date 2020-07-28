@@ -1,0 +1,23 @@
+.pop-up {
+  display: none;
+}
+
+.pop-up__title {
+  font-size: 25px;
+  line-height: 30px;
+
+  @include font;
+  text-align: center;
+}
+
+.pop-up__text {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: $dark-gray;
+}
+
+.pop-up__list {
+  @include list;
+}

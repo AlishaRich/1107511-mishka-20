@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>HTML Academy: Мишка</title>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
         <header class="page-header">
@@ -59,14 +59,22 @@
                 <a class="video__button-buy" href="#">Сделать заказ</a>
             </section>
             <div class="pop-up visually-hidden">
-              <h2 class="pop-up__title">Добавить в корзину</h2>
-              <p class="pop-up__text">Выберите размер</p>
-              <ol class="pop-up__list size">
-                <li class="size__item"><button class="size__button" type="button">S</button></li>
-                <li class="size__item"><button class="size__button" type="button">M</button></li>
-                <li class="size__item"><button class="size__button" type="button">L</button></li>
-                <button class="pop-up__button-add" type="submit">Добавить</button>
-              </ol>
+                <h2 class="pop-up__title">Добавить в корзину</h2>
+                <p class="pop-up__text">Выберите размер</p>
+                <form class="pop-up__form size-form" action="https://echo.htmlacademy.ru" method="get">
+                    <ul class="pop-up__list size">
+                        <li class="size__item">
+                            <label class="size-form__label"><input class="size-form__input" type="radio" name="size" value="small" />S</label>
+                        </li>
+                        <li class="size__item">
+                            <label class="size-form__label"><input class="size-form__input" type="radio" name="size" value="middle" />M</label>
+                        </li>
+                        <li class="size__item">
+                            <label class="size-form__label"><input class="size-form__input" type="radio" name="size" value="large" />L</label>
+                        </li>
+                    </ul>
+                    <button class="size-form__button-add" type="submit">Добавить</button>
+                </form>
             </div>
         </main>
         <footer class="page-footer">

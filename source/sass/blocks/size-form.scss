@@ -1,0 +1,7 @@
+.size-form__button-add {
+  font-size: 17px;
+  line-height: 16px;
+
+  @include button-text;
+  color: #ffffff;
+}

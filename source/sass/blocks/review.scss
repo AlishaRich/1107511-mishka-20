@@ -1,3 +1,8 @@
+.review {
+  outline: 1px solid darkorange;
+  margin: 0 30px 45px;
+}
+
 .review__title {
   font-size: 25px;
   line-height: 30px;
@@ -10,7 +15,7 @@
   line-height: 30px;
   font-weight: normal;
   text-align: left;
-  color: $text-color;
+  color: $dark-gray;
 }
 
 .review__author,
@@ -23,7 +28,7 @@
 
 .review__contact {
   font-weight: normal;
-  color: $text-color;
+  color: $dark-gray;
 }
 
 .review__button-feedback {

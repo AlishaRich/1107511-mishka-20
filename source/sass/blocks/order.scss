@@ -1,0 +1,16 @@
+.order {
+  outline: 1px solid red;
+  margin: 17px 30px 55px;
+}
+
+.order__text {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: left;
+  color: $dark-gray;
+}
+
+.order__form {
+  outline: 1px solid blueviolet;
+}

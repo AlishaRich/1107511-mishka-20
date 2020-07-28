@@ -1,3 +1,5 @@
 .cards {
   @include list;
+  outline: 1px solid gold;
+  margin: 30px;
 }
