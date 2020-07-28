@@ -1,0 +1,34 @@
+.review__title {
+  font-size: 25px;
+  line-height: 30px;
+
+  @include font;
+}
+
+.review__text {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: left;
+  color: $text-color;
+}
+
+.review__author,
+.review__contact {
+  font-size: 17px;
+  line-height: 30px;
+
+  @include font;
+}
+
+.review__contact {
+  font-weight: normal;
+  color: $text-color;
+}
+
+.review__button-feedback {
+  font-size: 18px;
+  line-height: 20px;
+
+  @include button-text;
+}

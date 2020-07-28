@@ -3,15 +3,16 @@
     <head>
         <meta charset="utf-8" />
         <title>HTML Academy: Мишка</title>
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="page-header">
-            <a class="page-header__logo"><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка" /></a>
+            <a class="page-header__logo" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка" /></a>
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
                 <ul class="main-nav__list nav-list">
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Каталог товаров</a>
+                        <a class="nav-list__link" href="catalog.html">Каталог товаров</a>
                     </li>
                     <li class="nav-list__item">
                         <a class="nav-list__link" href="#">Вязание на заказ</a>
@@ -26,10 +27,10 @@
             </nav>
         </header>
         <main class="page-main">
-            <h1 class="order-title">Вязание на заказ</h1>
+            <h1 class="page-title page-title--bg-gray">Вязание на заказ</h1>
             <p class="order-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
             <form class="order-form" action="https://echo.htmlacademy.ru" method="get">
-                <fieldset class="order-form__fieldset--radio form-block">
+                <fieldset class="order-form__fieldset form-block form-block--radio">
                     <legend class="form-block__legend">Тип</legend>
                     <ul class="form-block__list">
                         <li class="form-block__item">
@@ -40,7 +41,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="order-form__fieldset--checkbox form-block">
+                <fieldset class="order-form__fieldset form-block form-block--checkbox">
                     <legend class="form-block__legend">Цвет</legend>
                     <ul class="form-block__list">
                         <li class="form-block__item">
@@ -63,7 +64,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="order-form__fieldset--text form-block">
+                <fieldset class="order-form__fieldset form-block form-block--text">
                     <legend class="form-block__legend">ФИО</legend>
                     <ul class="form-block__list">
                         <li class="form-block__item">
@@ -77,20 +78,20 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="order-form__fieldset--tel form-block">
+                <fieldset class="order-form__fieldset form-block form-block--tel">
                     <legend class="form-block__legend">Тел</legend>
                     <label class="form-block__label"><input class="form-block__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" /></label>
                 </fieldset>
-                <fieldset class="order-form__fieldset--email form-block">
+                <fieldset class="order-form__fieldset form-block form-block--email">
                     <legend class="form-block__legend">E-mail</legend>
                     <label class="form-block__label"><input class="form-block__input" type="email" name="email" placeholder="Ваш Email*" /></label>
                 </fieldset>
-                <fieldset class="order-form__fieldset--textarea form-block">
+                <fieldset class="order-form__fieldset form-block form-block--textarea">
                     <legend class="form-block__legend">Доп</legend>
-                    <textarea class="form-block__input" rows="5" cols="50" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                    <textarea class="form-block__input" rows="5" cols="25" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </fieldset>
-                <p class="imperative">*Поля обязательны для заполнения</p>
-                <button class="send-button" type="submit">Отправить заказ</button>
+                <p class="order-form__imperative">*Поля обязательны для заполнения</p>
+                <button class="order-form__button-send" type="submit">Отправить заказ</button>
             </form>
         </main>
         <footer class="page-footer">
@@ -106,7 +107,7 @@
                 </li>
             </ul>
             <p class="page-footer__copyright develop">
-                <span class="develop__text">Разработано:</span>
+                <span class="develop__text">Разработано</span>
                 <a class="develop__button" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
             </p>
         </footer>
