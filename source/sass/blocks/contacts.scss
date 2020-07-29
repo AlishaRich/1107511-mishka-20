@@ -1,0 +1,20 @@
+.contacts {
+  outline: 1px solid lime;
+  margin: 38px 30px 39px;
+}
+
+.contacts__title {
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 30px;
+
+  @include font;
+}
+
+.contacts__button-mail {
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 20px;
+
+  @include button-text;
+}

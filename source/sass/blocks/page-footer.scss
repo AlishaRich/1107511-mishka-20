@@ -1,0 +1,8 @@
+.page-footer {
+  font-family: $font-family;
+  width: 320px;
+  background-color: $gray;
+  outline: 1px solid aqua;
+
+  @include list;
+}

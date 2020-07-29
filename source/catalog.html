@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8" />
         <title>HTML Academy: Мишка</title>
+        <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
         <header class="page-header">
-            <a class="page-header__logo"><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка" /></a>
+            <a class="page-header__logo" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка" /></a>
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
                 <ul class="main-nav__list nav-list">
@@ -14,7 +15,7 @@
                         <a class="nav-list__link" href="#">Каталог товаров</a>
                     </li>
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Вязание на заказ</a>
+                        <a class="nav-list__link" href="form.html">Вязание на заказ</a>
                     </li>
                     <li class="nav-list__item">
                         <a class="nav-list__link" href="#">Поиск по сайту</a>
@@ -26,7 +27,7 @@
             </nav>
         </header>
         <main class="page-main">
-            <h1 class="page-title">Каталог товаров</h1>
+            <h1 class="page-title page-title--bg-gray">Каталог товаров</h1>
             <ul class="cards">
                 <li class="cards__item card">
                     <img src="https://via.placeholder.com/150x150" alt="Мягкая игрушка Зайчик" />
@@ -57,6 +58,24 @@
                 <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                 <a class="video__button-buy" href="#">Сделать заказ</a>
             </section>
+            <div class="pop-up visually-hidden">
+                <h2 class="pop-up__title">Добавить в корзину</h2>
+                <p class="pop-up__text">Выберите размер</p>
+                <form class="pop-up__form size-form" action="https://echo.htmlacademy.ru" method="get">
+                    <ul class="pop-up__list size">
+                        <li class="size__item">
+                            <label class="size-form__label"><input class="size-form__input" type="radio" name="size" value="small" />S</label>
+                        </li>
+                        <li class="size__item">
+                            <label class="size-form__label"><input class="size-form__input" type="radio" name="size" value="middle" />M</label>
+                        </li>
+                        <li class="size__item">
+                            <label class="size-form__label"><input class="size-form__input" type="radio" name="size" value="large" />L</label>
+                        </li>
+                    </ul>
+                    <button class="size-form__button-add" type="submit">Добавить</button>
+                </form>
+            </div>
         </main>
         <footer class="page-footer">
             <ul class="page-footer__list social-list">
@@ -71,7 +90,7 @@
                 </li>
             </ul>
             <p class="page-footer__copyright develop">
-                <span class="develop__text">Разработано:</span>
+                <span class="develop__text">Разработано</span>
                 <a class="develop__button" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
             </p>
         </footer>

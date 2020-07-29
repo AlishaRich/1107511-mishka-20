@@ -1,0 +1,11 @@
+.nav-list {
+  @include list;
+}
+
+.nav-list__link {
+  font-family: $font-family;
+  font-size: 17px;
+  line-height: 24px;
+
+  @include font;
+}

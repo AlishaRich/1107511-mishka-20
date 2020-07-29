@@ -1,0 +1,29 @@
+.video {
+  outline: 1px solid teal;
+  margin: 0 30px 58px;
+}
+
+.video__title {
+  font-family: $font-family;
+  font-size: 17px;
+  line-height: 24px;
+
+  @include font;
+}
+
+.video__text {
+  font-family: $font-family;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: left;
+  color: $dark-gray;
+}
+
+.video__button-buy {
+  font-family: $font-family;
+  font-size: 17px;
+  line-height: 16px;
+
+  @include button-text;
+}

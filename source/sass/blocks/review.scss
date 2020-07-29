@@ -1,0 +1,43 @@
+.review {
+  outline: 1px solid darkorange;
+  margin: 0 30px 45px;
+}
+
+.review__title {
+  font-family: $font-family;
+  font-size: 25px;
+  line-height: 30px;
+
+  @include font;
+}
+
+.review__text {
+  font-family: $font-family;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: left;
+  color: $dark-gray;
+}
+
+.review__author,
+.review__contact {
+  font-family: $font-family;
+  font-size: 17px;
+  line-height: 30px;
+
+  @include font;
+}
+
+.review__contact {
+  font-weight: normal;
+  color: $dark-gray;
+}
+
+.review__button-feedback {
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 20px;
+
+  @include button-text;
+}

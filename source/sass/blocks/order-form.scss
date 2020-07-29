@@ -1,0 +1,16 @@
+.order-form__imperative {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  text-align: left;
+  color: $dark-gray;
+}
+
+.order-form__button-send {
+  font-family: $font-family;
+  font-size: 17px;
+  line-height: 16px;
+
+  @include button-text;
+}
