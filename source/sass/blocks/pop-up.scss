@@ -3,6 +3,7 @@
 }
 
 .pop-up__title {
+  font-family: $font-family;
   font-size: 25px;
   line-height: 30px;
 
@@ -11,6 +12,7 @@
 }
 
 .pop-up__text {
+  font-family: $font-family;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;

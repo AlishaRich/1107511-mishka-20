@@ -4,6 +4,7 @@
 }
 
 .video__title {
+  font-family: $font-family;
   font-size: 17px;
   line-height: 24px;
 
@@ -11,6 +12,7 @@
 }
 
 .video__text {
+  font-family: $font-family;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
@@ -19,6 +21,7 @@
 }
 
 .video__button-buy {
+  font-family: $font-family;
   font-size: 17px;
   line-height: 16px;
 
