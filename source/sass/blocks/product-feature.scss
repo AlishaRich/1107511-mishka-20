@@ -1,0 +1,28 @@
+.product-feature {
+  width: 293px;
+
+  @media (max-width: 400px) {
+    width: 260px; /* Здесь очень странный код, чтобы стили не ломались */
+  }
+}
+
+.product-feature__type {
+  width: 150px;
+  float: left;
+  clear: both;
+  padding: 5px 0;
+  border-bottom: 1px solid $light-gray;
+
+  @media (max-width: 400px) {
+    width: 97px;
+    float: left;
+    clear: both;
+    padding: 5px 0;
+    border-bottom: 1px solid $light-gray;
+  }
+}
+
+.product-feature__data {
+  padding: 5px 0;
+  border-bottom: 1px solid $light-gray;
+}

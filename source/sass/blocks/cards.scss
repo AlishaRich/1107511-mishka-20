@@ -2,4 +2,8 @@
   @include list;
   outline: 1px solid gold;
   margin: 30px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }

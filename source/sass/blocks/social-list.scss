@@ -1,3 +1,10 @@
 .social-list {
   @include list;
+
+  display: flex;
+  margin: 0 auto;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 40px;
 }

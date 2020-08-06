@@ -1,8 +1,27 @@
 .page-footer {
+  @include list;
+
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
   font-family: $main-font;
-  width: 320px;
   background-color: $gray;
   outline: 1px solid aqua;
 
-  @include list;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-footer__copyright {
+  margin: 0 auto;
 }

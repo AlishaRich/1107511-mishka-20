@@ -1,5 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  width: 320px;
+  padding: 0;
+  margin: 0;
   background: white;
   font-family: "Open Sans", "Helvetica", sans-serif;
   outline: 1px solid darkgreen;
@@ -10,17 +21,32 @@ a {
   color: black;
 }
 
-/* Открыть позже
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}  */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: 360px;
+
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media (min-width: 1150px) {
+    min-width: 1150px;
+  }
+}

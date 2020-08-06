@@ -1,6 +1,10 @@
 .review {
   outline: 1px solid darkorange;
   margin: 0 30px 45px;
+
+  @media (min-width: 400px) {
+    background: url("../img/review@1x.jpg") 0 50% no-repeat;
+  }
 }
 
 .review__title {
@@ -40,4 +44,9 @@
   line-height: 20px;
 
   @include button-text;
+}
+
+.review__button {
+  background: transparent;
+  border: none;
 }
