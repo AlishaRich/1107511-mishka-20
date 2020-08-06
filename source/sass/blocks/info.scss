@@ -7,6 +7,19 @@
   font-family: $main-font;
   font-size: 25px;
   line-height: 30px;
+  margin: 0 0 83px 0;
 
   @include font;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 97px 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 95px 250px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

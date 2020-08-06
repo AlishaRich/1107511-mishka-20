@@ -1,20 +1,43 @@
+.product-groups {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0 50px 0 50px;
+  }
+}
+
 .product-groups__item {
-  width: 320px;
-}
-
-.product-groups__item:first-child {
-  background-color: $light-green;
-}
-
-.product-groups__item:last-child {
-  background-color: $green;
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .product-groups__link {
+  display: block;
+  padding: 24px 160px 31px 30px;
   font-family: $main-font;
   font-size: 19px;
   line-height: 24px;
 
   @include font;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 167px 34px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 350px 34px 37px;
+  }
+}
+
+.product-groups__link--interior {
+  background-color: $light-green;
+}
+
+.product-groups__link--toy {
+  background-color: $green;
 }

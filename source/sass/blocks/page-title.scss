@@ -6,11 +6,20 @@
   @include font;
   text-align: center;
   outline: 1px solid blue;
-  margin: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .page-title--bg-gray {
-  width: 320px;
   padding: 74px 0;
   background-color: $gray;
 }
