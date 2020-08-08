@@ -31,6 +31,14 @@
   }
 }
 
+.advantages__item--pack {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 83px 0; /* Исправить на 110 рх */
+  }
+}
+
 .advantages__item--stuff {
   @media (min-width: $tablet-width) {
     min-width: 263px;
