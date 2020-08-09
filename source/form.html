@@ -54,25 +54,27 @@
                       <a class="nav-list__link" href="#">Распродажа</a>
                   </li>
               </ul>
+              <span class="main-nav__delivery">Бесплатная доставка по России</span>
           </nav>
       </header>
         <h1 class="page-title page-title--bg-gray"><span class="container">Вязание на заказ</span></h1>
-        <main class="page-main container">
+        <main class="page-main">
             <div class="order">
-                <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+                <p class="order__text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
                 <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="get">
-                    <fieldset class="order-form__fieldset form-block form-block--radio">
+                    <fieldset class="order-form__fieldset form-block form-block--radio container">
                         <legend class="form-block__legend">Тип</legend>
                         <ul class="form-block__list">
                             <li class="form-block__item">
-                                <label class="form-block__label"><input class="form-block__input" type="radio" name="type" value="interior" checked />Аксессуар для интерьера</label>
+                                <input class="form-block__input form-block__input--interior" type="radio" name="type" value="interior" id="interior" checked /><label class="form-block__label form-block__label--interior" for="interior">Аксессуар для интерьера</label>
                             </li>
                             <li class="form-block__item">
                                 <label class="form-block__label"><input class="form-block__input" type="radio" name="type" value="toy" />Детская игрушка</label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="order-form__fieldset form-block form-block--checkbox">
+                    <div class="order-form__bg-gray">
+                    <fieldset class="order-form__fieldset form-block form-block--checkbox container">
                         <legend class="form-block__legend">Цвет</legend>
                         <ul class="form-block__list">
                             <li class="form-block__item">
@@ -95,11 +97,12 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="order-form__fieldset form-block form-block--text">
+                    </div>
+                    <fieldset class="order-form__fieldset form-block form-block--text  container">
                         <legend class="form-block__legend">ФИО</legend>
                         <ul class="form-block__list">
                             <li class="form-block__item">
-                                <label class="form-block__label">Имя<input class="form-block__input" type="text" name="name" placeholder="Введите ваше имя*" /></label>
+                                <label class="form-block__label">Имя<input class="form-block__input form-block__input--name" type="text" name="name" placeholder="Введите ваше имя*" /></label>
                             </li>
                             <li class="form-block__item">
                                 <label class="form-block__label">Фамилия<input class="form-block__input" type="text" name="surname" placeholder="Укажите фамилию*" /></label>
@@ -109,20 +112,24 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="order-form__fieldset form-block form-block--tel">
+                    <div class="order-form__bg-gray">
+                    <fieldset class="order-form__fieldset form-block form-block--tel container">
                         <legend class="form-block__legend">Тел</legend>
                         <label class="form-block__label"><input class="form-block__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" /></label>
                     </fieldset>
-                    <fieldset class="order-form__fieldset form-block form-block--email">
+                    <fieldset class="order-form__fieldset form-block form-block--email container">
                         <legend class="form-block__legend">E-mail</legend>
                         <label class="form-block__label"><input class="form-block__input" type="email" name="email" placeholder="Ваш Email*" /></label>
                     </fieldset>
-                    <fieldset class="order-form__fieldset form-block form-block--textarea">
+                    </div>
+                    <fieldset class="order-form__fieldset form-block form-block--textarea container">
                         <legend class="form-block__legend">Доп</legend>
-                        <textarea class="form-block__input" rows="5" cols="20" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                        <textarea class="form-block__input" rows="5" cols="25" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                     </fieldset>
+                    <div class="container">
                     <p class="order-form__imperative">*Поля обязательны для заполнения</p>
                     <button class="order-form__button-send" type="submit">Отправить заказ</button>
+                  </div>
                 </form>
             </div>
         </main>

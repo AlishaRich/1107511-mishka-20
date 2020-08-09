@@ -54,14 +54,14 @@
 
 .contact__data:first-of-type {
   @media (min-width: $tablet-width) {
-  display: block;
-  margin-right: 40px;
+    display: block;
+    margin-right: 40px;
   }
 }
 
 .contact__data:last-of-type {
   @media (min-width: $tablet-width) {
-  width: 257px;
+    width: 257px;
   }
 
   @media (min-width: $desktop-width) {

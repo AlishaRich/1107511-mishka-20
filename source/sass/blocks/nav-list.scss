@@ -13,7 +13,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 2/3;
+    margin-top: 30px;
+    grid-row: 1/2;
     grid-column: 1/2;
   }
 }
@@ -42,6 +43,7 @@
     padding: 0 0 0 45px;
     font-size: 15px;
     line-height: 24px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,8 +59,14 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-top: 30px;
     grid-row: 1/2;
     grid-column: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
   }
 }
 
