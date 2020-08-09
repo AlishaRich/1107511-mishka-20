@@ -1,17 +1,32 @@
 .order {
-  outline: 1px solid red;
   margin: 17px 30px 55px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .order__text {
+  width: 260px;
+  padding-bottom: 20px;
   font-family: $main-font;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
   text-align: left;
   color: $dark-gray;
-}
 
-.order__form {
-  outline: 1px solid blueviolet;
+  @media (min-width: $tablet-width) {
+    width: 667px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 702px;
+    margin: 0 auto;
+  }
 }

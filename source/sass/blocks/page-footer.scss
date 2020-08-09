@@ -1,17 +1,9 @@
 .page-footer {
   @include list;
 
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
   font-family: $main-font;
   background-color: $gray;
   outline: 1px solid aqua;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 .page-footer__logo {
@@ -24,4 +16,15 @@
 
 .page-footer__copyright {
   margin: 0 auto;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

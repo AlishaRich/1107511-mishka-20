@@ -16,3 +16,9 @@
   text-transform: uppercase;
   color: #444444;
 }
+
+@mixin button-view {
+  display: block;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+}

@@ -1,17 +1,20 @@
 .page-header {
   outline: 1px solid steelblue;
-  min-height: 79px;
 
   @media (min-width: $tablet-width) {
-    min-height: 89px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 88px;
+    margin-bottom: -25px;
   }
 }
 
 .page-header__logo {
-  margin-left: 110px;
-  margin-top: 20px;
+  margin: 20px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 20px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }

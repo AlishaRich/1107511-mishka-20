@@ -1,10 +1,18 @@
 .main-nav {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 80px 1fr;
-  width: 320px;
-  margin: 0 auto;
+  grid-template-rows: 80px auto auto;
   outline: 1px solid orange;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
 }
 
 .main-nav__toggle {
@@ -16,13 +24,24 @@
   }
 }
 
-.main-nav__list {
-  grid-column: 1/3;
-  grid-row: 2/3;
-  outline: 1px solid red;
-  margin: 0 auto;
+.main-nav__delivery {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: right;
+  color: $dark-gray;
+  display: none;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    display: inline-block;
+    padding: 0 20px 0 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px 0 0;
+    grid-column: 3/4;
+    grid-row: 3/4;
   }
 }

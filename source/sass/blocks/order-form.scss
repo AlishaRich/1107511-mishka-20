@@ -1,3 +1,22 @@
+.order-form__fieldset {
+  padding: 0 0 20px 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 100px;
+  }
+}
+
+.order-form__bg-gray {
+  @media (min-width: $tablet-width) {
+    background-color: $gray;
+  }
+}
+
 .order-form__imperative {
   font-family: $main-font;
   font-size: 14px;
@@ -5,12 +24,36 @@
   font-weight: normal;
   text-align: left;
   color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+    margin: 0 50px 0 0;
+    float: right;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 200px;
+  }
 }
 
 .order-form__button-send {
+  padding: 18px 37px;
   font-family: $main-font;
   font-size: 17px;
   line-height: 16px;
 
   @include button-text;
+  @include button-view;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 10px 50px;
+    padding: 18px 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 150px;
+  }
 }

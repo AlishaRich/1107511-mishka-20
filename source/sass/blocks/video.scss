@@ -1,29 +1,119 @@
 .video {
   outline: 1px solid teal;
   margin: 0 30px 58px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
 }
 
 .video__title {
+  width: 156px;
   font-family: $main-font;
   font-size: 17px;
   line-height: 24px;
 
   @include font;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: 271px;
+    margin-left: 50px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 178px;
+  }
 }
 
 .video__text {
+  width: 226px;
   font-family: $main-font;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
   text-align: left;
   color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    width: 611px;
+    margin: 0 50px 20px 50px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 252px;
+  }
+}
+
+.video__film {
+  @media (min-width: $tablet-width) {
+    order: 1;
+    display: block;
+    margin: 25px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/5;
+  }
+}
+
+.video__button-play {
+  width: 95px;
+  height: 70px;
+  background-color: $light-green;
+  border: 5px solid $white;
+  border-radius: 25px;
+  position: absolute;
+  top: 1680px;
+  left: 111px;
+
+  @media (min-width: $tablet-width) {
+    top: 1230px;
+    left: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 760px;
+    left: 334px;
+  }
 }
 
 .video__button-buy {
+  display: block;
+  margin: 0 auto;
   font-family: $main-font;
   font-size: 17px;
   line-height: 16px;
+  padding: 16px 37px;
+  width: 260px;
 
   @include button-text;
+  @include button-view;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    width: 584px;
+    padding: 18px 207px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    padding: 18px 30px;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
 }
