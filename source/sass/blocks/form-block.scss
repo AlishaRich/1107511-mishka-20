@@ -109,17 +109,11 @@
   }
 }
 
-.form-block--textarea .form-block__input {
-  @media (min-width: $tablet-width) {
-    margin-left: 108px;
-  }
-}
-
 .form-block--checkbox .form-block__list {
   @media (min-width: $tablet-width) {
-  display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: auto auto auto;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: auto auto auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -133,6 +127,7 @@
   border: 2px solid $black;
 
   @media (min-width: $tablet-width) {
+    margin-left: 108px;
     width: 501px;
   }
 
