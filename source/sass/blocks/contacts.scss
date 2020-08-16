@@ -1,15 +1,21 @@
 .contacts {
   outline: 1px solid lime;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0 57px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 52px;
+    padding: 84px 0 100px 177px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: max-content auto auto;
   }
 }
 
 .contacts__title {
-  margin: 0 0 0 25px;
+  margin: 34px 0 26px 29px;
   font-family: $main-font;
   font-size: 18px;
   line-height: 30px;
@@ -17,14 +23,19 @@
   @include font;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 50px 50px;
-    padding: 50px 0 0 0;
+    margin: 0 0 50px 0;
+    padding: 20px 0 0 45px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: inline-block;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 70px 0 50px 42px;
+    padding: 0;
+    align-self: start;
     font-size: 53px;
     line-height: 57px;
   }
@@ -32,7 +43,7 @@
 
 .contacts__button-mail {
   width: 260px;
-  padding: 16px 37px;
+  padding: 14px 37px;
   margin: 0 auto;
   font-family: $main-font;
   font-size: 18px;
@@ -43,14 +54,29 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    padding: 16px 27px;
+    padding: 14px 27px;
     font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 43px 0 0 48px;
+    align-self: center;
+  }
+}
+
+.map img {
+  margin: 38px 0 36px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 38px 0 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
 .map {
-  margin: 33px 0 40px 0;
-
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/4;

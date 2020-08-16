@@ -1,8 +1,46 @@
+.size {
+  display: flex;
+  width: 260px;
+  margin: 0 auto 31px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}
+
+.size-form__label {
+  display: block;
+  padding: 15px 22px;
+  width: 82px;
+  height: 52px;
+  border: 2px solid #ececec;
+  cursor: pointer;
+
+  @include button-text;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    padding: 15px 37px;
+  }
+}
+
 .size-form__button-add {
+  display: block;
+  width: 260px;
+  margin: 0 auto 46px;
+  padding: 18px 68px;
+  background-color: $light-green;
+  border: none;
   font-family: $main-font;
   font-size: 17px;
   line-height: 16px;
 
   @include button-text;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    padding: 20px 112px 16px;
+  }
 }

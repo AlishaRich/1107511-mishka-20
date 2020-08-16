@@ -1,9 +1,39 @@
 .cards {
   @include list;
-  outline: 1px solid gold;
   margin: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 84px 51px 30px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    margin: 152px 0 59px;
+  }
+}
+
+.cards__item:nth-child(2) .card__title {
+  @media (min-width: $tablet-width) {
+    margin: 25px 25px 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 24px 25px 4px 26px;
+  }
+}
+
+.cards__item:last-child .card__title {
+  @media (min-width: $tablet-width) {
+    margin: 27px 69px 5px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 24px 69px 5px 28px;
+  }
+}
+
+.cards__item:last-child .card__text {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 35px 27px;
   }
 }

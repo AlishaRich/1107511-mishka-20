@@ -1,9 +1,22 @@
+.form-block {
+  padding: 0;
+}
+
 .form-block__list {
   @include list;
 
   @media (min-width: $tablet-width) {
     margin-left: 150px;
   }
+}
+
+.form-block--radio .form-block__item,
+.form-block--checkbox .form-block__item {
+  padding: 13px 18px 10px 63px;
+}
+
+.form-block--text .form-block__item {
+  padding-top: 8px;
 }
 
 .form-block__legend {
@@ -17,7 +30,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    float: left;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,18 +51,32 @@
   }
 }
 
-.form-block__input--interior {
-  float: left;
-}
-
 .form-block__label--interior {
   display: block;
-  padding: 0 20px;
 }
 
-.form-block--checkbox,
+.form-block--radio {
+  margin-bottom: 32px;
+}
+
+.form-block--checkbox {
+  margin-bottom: 14px;
+}
+
+.form-block--text {
+  margin-bottom: 19px;
+}
+
+.form-block--tel {
+  margin-bottom: 20px;
+}
+
 .form-block--email {
   margin-bottom: 20px;
+}
+
+.form-block--checkbox .form-block__item {
+  margin-bottom: 16px;
 }
 
 .form-block__input {
@@ -70,7 +97,8 @@
 .form-block--tel .form-block__input,
 .form-block--email .form-block__input {
   display: block;
-  margin: 0 0 10px 0;
+  padding: 14px 0 16px 0;
+  margin-bottom: 12px;
   width: 260px;
   border: none;
   border-bottom: 2px solid $black;
@@ -86,6 +114,8 @@
 }
 
 .form-block--tel .form-block__input {
+  padding: 3px 0 16px 0;
+
   @media (min-width: $tablet-width) {
     width: 500px;
     margin-left: 115px;
@@ -98,6 +128,8 @@
 }
 
 .form-block--email .form-block__input {
+  padding: 3px 0 16px 0;
+
   @media (min-width: $tablet-width) {
     width: 500px;
     margin-left: 90px;
@@ -125,6 +157,10 @@
 
 .form-block--textarea .form-block__input {
   border: 2px solid $black;
+  width: 260px;
+  height: 142px;
+  margin: 5px 0 0 0;
+  padding: 14px;
 
   @media (min-width: $tablet-width) {
     margin-left: 108px;

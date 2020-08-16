@@ -1,16 +1,15 @@
 .page-header {
-  outline: 1px solid steelblue;
-
   @media (min-width: $tablet-width) {
-    margin-bottom: -25px;
+    margin-bottom: -42px;
   }
 }
 
 .page-header__logo {
-  margin: 20px auto;
+  padding: 22px 5px 26px 116px;
 
   @media (min-width: $tablet-width) {
-    margin: 20px 45px;
+    padding: 30px 5px 19px 57px;
+    margin-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
