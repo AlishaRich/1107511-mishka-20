@@ -1,5 +1,14 @@
 .info {
   outline: 1px solid olive;
+  padding: 28px 29px;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 29px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 30px 80px 204px;
+  }
 }
 
 .info__title {
@@ -11,13 +20,14 @@
   @include font;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 97px 50px;
+    padding: 21px 0 18px 17px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 95px 250px;
+    padding: 24px 0 18px 16px;
+    margin: 0 0 84px 0;
     font-size: 53px;
     line-height: 57px;
   }

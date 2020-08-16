@@ -1,8 +1,7 @@
 .main-nav {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 80px auto auto;
-  outline: 1px solid orange;
+  grid-template-rows: 79px auto auto;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: auto auto;
@@ -16,6 +15,7 @@
 }
 
 .main-nav__toggle {
+  padding: 0 0 0 24px;
   background-color: $white;
   border: none;
 
@@ -34,7 +34,7 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    padding: 0 20px 0 0;
+    padding: 0 50px 0 0;
     grid-column: 2/3;
     grid-row: 2/3;
   }

@@ -1,28 +1,37 @@
 .product-feature {
-  width: 293px;
+  margin-bottom: 28px;
 
-  @media (max-width: 400px) {
-    width: 260px; /* Здесь очень странный код, чтобы стили не ломались */
+  @media (min-width: $desktop-width) {
+    padding: 22px 0 0 38px;
   }
 }
 
-.product-feature__type {
-  width: 150px;
-  float: left;
-  clear: both;
-  padding: 5px 0;
+.product-feature__item {
+  display: flex;
+  width: 260px;
   border-bottom: 1px solid $light-gray;
-
-  @media (max-width: 400px) {
-    width: 97px;
-    float: left;
-    clear: both;
-    padding: 5px 0;
-    border-bottom: 1px solid $light-gray;
-  }
 }
 
-.product-feature__data {
-  padding: 5px 0;
-  border-bottom: 1px solid $light-gray;
+.product-feature__item:first-child {
+  padding: 4px 0 10px 0;
+}
+
+.product-feature__item:nth-child(2) {
+  padding: 9px 0 10px 0;
+}
+
+.product-feature__item:last-child {
+  padding: 9px 0 10px 0;
+}
+
+.product-feature__data--first {
+  margin-left: 57px;
+}
+
+.product-feature__data--second {
+  margin-left: 30px;
+}
+
+.product-feature__data--last {
+  margin-left: 40px;
 }

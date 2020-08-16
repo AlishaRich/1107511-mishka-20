@@ -6,26 +6,30 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 265px 325px;
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 64px;
-    margin-left: 50px;
+    grid-template-rows: 1fr 1fr auto;
+    column-gap: 69px;
+    margin-left: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 80px;
-    margin-left: 250px;
+    margin-left: 21px;
+    column-gap: 85px;
   }
 }
 
 .advantages__item {
+  width: 250px;
   font-family: $main-font;
   font-size: 17px;
   line-height: 20px;
   margin: 0 0 83px 0;
+  padding-top: 1px;
 
   @include font;
 
   @media (min-width: $tablet-width) {
+    width: 293px;
+    margin: 0 0 111px 0;
     font-size: 20px;
     line-height: 22px;
   }
@@ -35,7 +39,17 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 83px 0; /* Исправить на 110 рх */
+    align-self: start;
+    margin: 0;
+  }
+}
+
+.advantages__item--likes {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    align-self: start;
+    margin: 0;
   }
 }
 
@@ -49,12 +63,5 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 2/3;
-  }
-}
-
-.advantages__item--likes {
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    grid-row: 3/4;
   }
 }
