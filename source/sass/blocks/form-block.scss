@@ -20,7 +20,7 @@
 }
 
 .form-block__legend {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   font-family: $main-font;
   font-size: 17px;
   line-height: 16px;
@@ -60,19 +60,19 @@
 }
 
 .form-block--checkbox {
-  margin-bottom: 14px;
+  margin-bottom: 30px;
 }
 
 .form-block--text {
-  margin-bottom: 19px;
+  margin-bottom: 31px;
 }
 
 .form-block--tel {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .form-block--email {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .form-block--checkbox .form-block__item {
@@ -179,5 +179,16 @@
 
   @media (min-width: $desktop-width) {
     width: 658px;
+  }
+}
+
+.form-block__item {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
