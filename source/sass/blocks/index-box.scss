@@ -3,8 +3,8 @@
   background-color: $gray-back;
 
   @media (min-width: 768px) {
-    border-top: 1px solid gray;
-    background: url("../img/hero-tablet@1x.jpg") 50% -15% no-repeat;
+    border-top: 1px solid #cccccc;
+    background: url("../img/hero-tablet@1x.jpg") 48% -15% no-repeat;
     background-color: $gray-back;
   }
 

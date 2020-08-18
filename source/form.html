@@ -5,88 +5,126 @@
         <title>HTML Academy: Мишка</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Pixel Glass -->
-          <style>
+        <style>
             HTML {
-              background-repeat: no-repeat;
-              background-position:  50% 0;
-              /* По умолчанию показывается мобильный макет */
-              background-image: url("../preview/mishka-form-mobile.jpg");
+                background-repeat: no-repeat;
+                background-position: 50% 0;
+                /* По умолчанию показывается мобильный макет */
+                background-image: url("../preview/mishka-form-mobile.jpg");
             }
             /* Планшет */
-            @media ( min-width: 768px ) {
-              HTML {
-                /* Планшетный макет */
-                background-image: url("../preview/mishka-form-tablet.jpg");
-              }
+            @media (min-width: 768px) {
+                HTML {
+                    /* Планшетный макет */
+                    background-image: url("../preview/mishka-form-tablet.png");
+                }
             }
             /* Десктоп */
-            @media ( min-width: 1150px ) {
-              HTML {
-                /* Десктопный макет */
-                background-image: url("../preview/mishka-form-desktop.jpg");
-              }
+            @media (min-width: 1150px) {
+                HTML {
+                    /* Десктопный макет */
+                    background-image: url("../preview/mishka-form-desktop.png");
+                }
             }
-          </style>
-          <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
-            <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
-          <!-- // Pixel Glass -->
+        </style>
+        <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css" />
+        <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
+        <!-- // Pixel Glass -->
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-      <header class="page-header container">
-          <nav class="main-nav">
-              <a class="page-header__logo" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка" /></a>
-              <button class="main-nav__toggle" type="button">
-                  <span class="visually-hidden">Открыть меню</span>
-                  <svg
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px"
-                      y="0px"
-                      width="19.958px"
-                      height="14px"
-                      viewBox="0 0 19.958 14"
-                      enable-background="new 0 0 19.958 14"
-                      xml:space="preserve"
-                  >
-                      <rect fill="#231F20" width="19.958" height="2" />
-                      <rect y="6" fill="#231F20" width="19.958" height="2" />
-                      <rect y="12" fill="#231F20" width="19.958" height="2" />
-                  </svg>
-              </button>
-              <ul class="main-nav__list nav-list nav-list-left">
-                  <li class="nav-list__item">
-                      <a class="nav-list__link" href="catalog.html">Каталог товаров</a>
-                  </li>
-                  <li class="nav-list__item">
-                      <a class="nav-list__link" href="form.html">Вязание на заказ</a>
-                  </li>
-              </ul>
-              <ul class="main-nav__list nav-list nav-list-right">
-                  <li class="nav-list__item">
-                      <a class="nav-list__link nav-list__link--search" href="#"><svg class="nav-list__search-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                        <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
-                      </svg><span class="nav-list__search-text">Поиск по сайту<span></a>
-                  </li>
-                  <li class="nav-list__item">
-                      <a class="nav-list__link nav-list__link--basket" href="#"><svg class="nav-list__basket-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-                      <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-                    </svg>Корзина: пока пуста</a>
-                  </li>
-              </ul>
-              <ul class="main-nav__list nav-list nav-list-bottom">
-                  <li class="nav-list__item">
-                      <a class="nav-list__link" href="#">Новые поступления</a>
-                  </li>
-                  <li class="nav-list__item">
-                      <a class="nav-list__link" href="#">Распродажа</a>
-                  </li>
-              </ul>
-              <span class="main-nav__delivery">Бесплатная доставка по России</span>
-          </nav>
-      </header>
+        <header class="page-header container">
+            <nav class="main-nav">
+                <a class="page-header__logo" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка" /></a>
+                <button class="main-nav__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                    <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="19.958px"
+                        height="14px"
+                        viewBox="0 0 19.958 14"
+                        enable-background="new 0 0 19.958 14"
+                        xml:space="preserve"
+                    >
+                        <rect fill="#231F20" width="19.958" height="2" />
+                        <rect y="6" fill="#231F20" width="19.958" height="2" />
+                        <rect y="12" fill="#231F20" width="19.958" height="2" />
+                    </svg>
+                </button>
+                <ul class="main-nav__list nav-list nav-list-left">
+                    <li class="nav-list__item">
+                        <a class="nav-list__link nav-list__link--catalog" href="catalog.html">Каталог товаров</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link nav-list__link--order" href="form.html">Вязание на заказ</a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list nav-list nav-list-right">
+                    <li class="nav-list__item">
+                        <a class="nav-list__link nav-list__link--search" href="#">
+                            <svg
+                                class="nav-list__search-svg"
+                                version="1.1"
+                                id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                width="17.6px"
+                                height="17.6px"
+                                viewBox="-0.8 -0.8 17.6 17.6"
+                                enable-background="new -0.8 -0.8 17.6 17.6"
+                                xml:space="preserve"
+                            >
+                                <path
+                                    fill="#231F20"
+                                    d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"
+                                />
+                            </svg>
+                            <span class="nav-list__search-text">Поиск по сайту</span>
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link nav-list__link--basket" href="#">
+                            <svg
+                                class="nav-list__basket-svg"
+                                version="1.1"
+                                id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                width="20.294px"
+                                height="18.849px"
+                                viewBox="264.205 370.961 20.294 18.849"
+                                enable-background="new 264.205 370.961 20.294 18.849"
+                                xml:space="preserve"
+                            >
+                                <path
+                                    fill="#231F20"
+                                    d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"
+                                />
+                            </svg>
+                            Корзина: пока пуста
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list nav-list nav-list-bottom">
+                    <li class="nav-list__item">
+                        <a class="nav-list__link nav-list__link--new" href="#">Новые поступления</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link nav-list__link--sale" href="#">Распродажа</a>
+                    </li>
+                </ul>
+                <span class="main-nav__delivery">Бесплатная доставка по России</span>
+            </nav>
+        </header>
         <h1 class="page-title page-title--bg-gray"><span class="container">Вязание на заказ</span></h1>
         <main class="page-main">
             <div class="order">
@@ -95,69 +133,69 @@
                     <div class="order-form__fieldset form-block form-block--radio container">
                         <h2 class="form-block__legend">Тип</h2>
                         <ul class="form-block__list">
-                            <li class="form-block__item">
+                            <li class="form-block__item form-block__item--radio">
                                 <input class="form-block__input form-block__input--interior visually-hidden" type="radio" name="type" value="interior" id="interior" checked />
                                 <label class="form-block__label form-block__label--interior" for="interior">Аксессуар для интерьера</label>
                             </li>
-                            <li class="form-block__item">
+                            <li class="form-block__item form-block__item--radio">
                                 <label class="form-block__label"><input class="form-block__input visually-hidden" type="radio" name="type" value="toy" />Детская игрушка</label>
                             </li>
                         </ul>
                     </div>
                     <div class="order-form__bg-gray">
                         <div class="order-form__fieldset form-block form-block--checkbox container">
-                            <h2 class="form-block__legend">Цвет</h2>
-                            <ul class="form-block__list">
-                                <li class="form-block__item">
+                            <h2 class="form-block__legend form-block__legend--checkbox">Цвет</h2>
+                            <ul class="form-block__list form-block__list--checkbox">
+                                <li class="form-block__item form-block__item--checkbox">
                                     <label class="form-block__label"><input class="form-block__input visually-hidden" type="checkbox" name="white" checked />Белый</label>
                                 </li>
-                                <li class="form-block__item">
+                                <li class="form-block__item form-block__item--checkbox">
                                     <label class="form-block__label"><input class="form-block__input visually-hidden" type="checkbox" name="gray" checked />Серый</label>
                                 </li>
-                                <li class="form-block__item">
+                                <li class="form-block__item form-block__item--checkbox">
                                     <label class="form-block__label"><input class="form-block__input visually-hidden" type="checkbox" name="tiffany" />«Тиффани»</label>
                                 </li>
-                                <li class="form-block__item">
+                                <li class="form-block__item form-block__item--checkbox">
                                     <label class="form-block__label"><input class="form-block__input visually-hidden" type="checkbox" name="black" />Черный</label>
                                 </li>
-                                <li class="form-block__item">
+                                <li class="form-block__item form-block__item--checkbox">
                                     <label class="form-block__label"><input class="form-block__input visually-hidden" type="checkbox" name="rose" />Розовый</label>
                                 </li>
-                                <li class="form-block__item">
+                                <li class="form-block__item form-block__item--checkbox">
                                     <label class="form-block__label"><input class="form-block__input visually-hidden" type="checkbox" name="orange" />Оранжевый</label>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="order-form__fieldset form-block form-block--text container">
-                        <h2 class="form-block__legend">ФИО</h2>
-                        <ul class="form-block__list">
-                            <li class="form-block__item">
-                                <label class="form-block__label">Имя<input class="form-block__input form-block__input--name" type="text" name="name" placeholder="Введите ваше имя*" /></label>
+                        <h2 class="form-block__legend form-block__legend--text">ФИО</h2>
+                        <ul class="form-block__list form-block__list--text">
+                            <li class="form-block__item form-block__item--text">
+                                <label class="form-block__label">Имя:<input class="form-block__input form-block__input--name" type="text" name="name" placeholder="Введите ваше имя*" /></label>
                             </li>
-                            <li class="form-block__item">
-                                <label class="form-block__label">Фамилия<input class="form-block__input" type="text" name="surname" placeholder="Укажите фамилию*" /></label>
+                            <li class="form-block__item form-block__item--text">
+                                <label class="form-block__label">Фамилия:<input class="form-block__input form-block__input--surname" type="text" name="surname" placeholder="Укажите фамилию*" /></label>
                             </li>
-                            <li class="form-block__item">
-                                <label class="form-block__label">Отчество<input class="form-block__input" type="text" name="patronym" placeholder="Отчество, если желаете" /></label>
+                            <li class="form-block__item form-block__item--text">
+                                <label class="form-block__label">Отчество:<input class="form-block__input form-block__input--patronym" type="text" name="patronym" placeholder="Отчество, если желаете" /></label>
                             </li>
                         </ul>
                     </div>
                     <div class="order-form__bg-gray">
                         <div class="order-form__fieldset form-block form-block--tel container">
-                            <h2 class="form-block__legend">Тел</h2>
-                            <label class="form-block__label"><input class="form-block__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" /></label>
+                            <h2 class="form-block__legend form-block__legend--tel">Тел</h2>
+                            <label class="form-block__label"><input class="form-block__input form-block__input--tel" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" /></label>
                         </div>
                         <div class="order-form__fieldset form-block form-block--email container">
-                            <h2 class="form-block__legend">E-mail</h2>
-                            <label class="form-block__label"><input class="form-block__input" type="email" name="email" placeholder="Ваш Email*" /></label>
+                            <h2 class="form-block__legend form-block__legend--email">E-mail</h2>
+                            <label class="form-block__label"><input class="form-block__input form-block__input--email" type="email" name="email" placeholder="Ваш Email*" /></label>
                         </div>
                     </div>
                     <div class="order-form__fieldset form-block form-block--textarea container">
-                        <h2 class="form-block__legend">Доп</h2>
-                        <textarea class="form-block__input" rows="5" cols="25" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                        <h2 class="form-block__legend form-block__legend--textarea">Доп</h2>
+                        <textarea class="form-block__input form-block__input--textarea" rows="5" cols="25" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                     </div>
-                    <div class="container container--flex">
+                    <div class="container order-form__flex-container">
                         <p class="order-form__imperative">*Поля обязательны для заполнения</p>
                         <button class="order-form__button-send" type="submit">Отправить заказ</button>
                     </div>

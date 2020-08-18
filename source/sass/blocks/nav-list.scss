@@ -38,14 +38,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 30px;
     grid-row: 1/2;
     grid-column: 1/2;
+    align-items: start;
   }
 }
 
 .nav-list-left .nav-list__link {
   padding: 0 0 0 36px;
+
+  @media (min-width: $desktop-width) {
+    padding: 31px 0 34px 36px;
+  }
+}
+
+.nav-list-left .nav-list__link--catalog {
+  @media (min-width: $desktop-width) {
+    padding-right: 35px;
+    border-right: 1px solid #cccccc;
+  }
 }
 
 .nav-list-bottom {
@@ -120,7 +131,19 @@
 .nav-list__link--search {
   @media (min-width: $tablet-width) {
     padding: 36px 7px 28px 76px;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+  }
+}
+
+.nav-list__link--new {
+  @media (min-width: $desktop-width) {
+    padding-left: 49px;
+  }
+}
+
+.nav-list__link--sale {
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
   }
 }

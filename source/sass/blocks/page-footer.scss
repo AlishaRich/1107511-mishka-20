@@ -24,17 +24,18 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 15px 0 0 159px;
+    padding: 12px 0 0 159px;
   }
 }
 
 .page-footer__container {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 26px 30px 18px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
   }
 }

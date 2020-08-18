@@ -6,12 +6,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     width: 690px;
-    /*margin-left: 50px;*/
+    padding-left: 12px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 770px;
-    /*margin-left: 100px;*/
+    width: 900px;
+    margin-left: 100px;
   }
 }
 
@@ -34,14 +34,15 @@
 
   @media (min-width: $tablet-width) {
     width: 330px;
-    margin: 0 50px 0 0;
+    margin: 0 50px 0 108px;
+    padding-top: 9px;
     font-size: 17px;
     line-height: 30px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 200px;
+    margin: 0 224px 0 141px;
   }
 }
 
@@ -58,17 +59,24 @@
   @include button-view;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 10px 50px;
-    padding: 18px 17px;
+    width: 230px;
+    margin: 0;
+    padding: 16px 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 150px;
+    margin: 0;
   }
 }
 
-.container--flex {
+.order-form__flex-container {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row-reverse;
+    padding: 18px 0 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 0 50px 0;
   }
 }

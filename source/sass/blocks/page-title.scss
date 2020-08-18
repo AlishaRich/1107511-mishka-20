@@ -23,6 +23,7 @@
   background-color: $gray;
 
   @media (min-width: $tablet-width) {
-    padding: 94px 0 80px;
+    padding: 94px 0 78px;
+    border-top: 1px solid #cccccc;
   }
 }

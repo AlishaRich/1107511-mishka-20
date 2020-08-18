@@ -4,7 +4,7 @@
 }
 
 .develop__text {
-  padding: 4px 28px 0 0;
+  padding: 6px 28px 0 0;
   font-family: $main-font;
   font-size: 19px;
   line-height: 18px;
@@ -17,5 +17,9 @@
 }
 
 .develop__button {
-  margin-top: 12px;
+  margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+  }
 }

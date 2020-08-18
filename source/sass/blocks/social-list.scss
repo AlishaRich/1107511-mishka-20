@@ -5,10 +5,14 @@
   margin: 0 auto 28px;
 
   @media (min-width: $tablet-width) {
-    margin: 32px auto 0;
+    margin: 27px auto 0;
   }
 }
 
 .social-list__item:not(:last-child) {
   margin-right: 40px;
+}
+
+.social-list__item:not(:nth-child(2)) {
+  margin-top: 5px;
 }
