@@ -1,6 +1,6 @@
 .cards {
   @include list;
-  margin: 30px;
+  margin: 30px 30px 31px;
 
   @media (min-width: $tablet-width) {
     margin: 84px 51px 30px;
@@ -9,13 +9,13 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    margin: 152px 0 59px;
+    margin: 154px 0 59px;
   }
 }
 
 .cards__item:nth-child(2) .card__title {
   @media (min-width: $tablet-width) {
-    margin: 25px 25px 9px;
+    margin: 29px 31px 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,8 +24,10 @@
 }
 
 .cards__item:last-child .card__title {
+  margin: 21px 28px 8px;
+
   @media (min-width: $tablet-width) {
-    margin: 25px 69px 5px 25px;
+    margin: 28px 69px 6px 31px;
   }
 
   @media (min-width: $desktop-width) {

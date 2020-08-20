@@ -10,20 +10,20 @@
                 background-repeat: no-repeat;
                 background-position: 50% 0;
                 /* По умолчанию показывается мобильный макет */
-                background-image: url("../preview/mishka-catalog-mobile.jpg");
+                background-image: url("../preview/Mobile-catalog.png");
             }
             /* Планшет */
             @media (min-width: 768px) {
                 HTML {
                     /* Планшетный макет */
-                    background-image: url("../preview/mishka-catalog-tablet.jpg");
+                    background-image: url("../preview/Tablet-catalog.png");
                 }
             }
             /* Десктоп */
             @media (min-width: 1150px) {
                 HTML {
                     /* Десктопный макет */
-                    background-image: url("../preview/mishka-catalog-desktop.jpg");
+                    background-image: url("../preview/Desktop-catalog.png");
                 }
             }
         </style>
@@ -160,7 +160,7 @@
                         <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg" />
                         <img src="img/photo-toys-mobile@1x.jpg" alt="Вязаная корзинка для игрушек" />
                     </picture>
-                    <h2 class="card__title">Большая корзинка для игрушек</h2>
+                    <h2 class="card__title card__title--unique">Большая корзинка для игрушек</h2>
                     <p class="card__text">Диаметр 30 см, высота 30 см</p>
                     <div class="card__wrapper">
                         <p class="card__price">1 500 руб.</p>
@@ -173,7 +173,7 @@
                 <picture class="video__film">
                     <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg" />
                     <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg" />
-                    <img src="img/video-mobile@1x.jpg" />
+                    <img src="img/video-mobile@1x.jpg" alt="Процесс производства" />
                 </picture>
                 <button class="video__button-play" type="button"><span class="visually-hidden">Воспроизведение видео</span></button>
                 <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>

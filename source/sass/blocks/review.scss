@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    padding: 78px 50px 125px 45px;
+    padding: 80px 50px 125px 45px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     background: url("../img/review@1x.jpg") 0 2% no-repeat;
@@ -13,12 +13,12 @@
 
   @media (min-width: $desktop-width) {
     padding: 78px 50px 176px 222px;
-    background: url("../img/review@1x.jpg") 6% 13% no-repeat;
+    background: url("../img/review@1x.jpg") 6% 8% no-repeat;
   }
 }
 
 .review__title {
-  margin: 0 0 24px 0;
+  margin: 4px 0 14px 0;
   font-family: $main-font;
   font-size: 25px;
   line-height: 30px;
@@ -26,6 +26,8 @@
   @include font;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 7px 0;
+    padding: 5px 5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -34,12 +36,13 @@
     font-size: 53px;
     line-height: 57px;
     margin: 0 0 13px 0;
+    padding: 7px 5px 0 2px;
   }
 }
 
 .review__text {
   width: 260px;
-  margin: 14px 0 24px 0;
+  margin: 14px 0 31px 0;
   font-family: $main-font;
   font-size: 15px;
   line-height: 30px;
@@ -56,8 +59,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 773px;
-    margin: 37px 0 38px 3px;
+    width: 873px;
+    margin: 24px 0 43px 3px;
   }
 }
 
@@ -78,7 +81,7 @@
 
 .review__author {
   @media (min-width: $tablet-width) {
-    margin: 27px 0 0 4px;
+    margin: 29px 0 0 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -114,7 +117,7 @@
   @media (min-width: $tablet-width) {
     width: 175px;
     padding: 13px 26px 15px;
-    margin: 3px 0 0 0;
+    margin: 0;
     grid-column: 2/3;
     grid-row: 1/2;
     align-self: start;
@@ -125,7 +128,7 @@
 
   @media (min-width: $desktop-width) {
     width: 175px;
-    margin: 11px 0 0 0;
+    margin: 10px 0 0 0;
   }
 }
 
@@ -136,7 +139,7 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    margin: 32px 19px 0 0;
+    margin: 39px 19px 0 0;
     grid-column: 2/3;
     grid-row: 3/5;
     justify-self: end;
@@ -148,7 +151,7 @@
 }
 
 .review__button {
-  padding: 13px 39px 11px;
+  padding: 13px 39px 10px;
   border: 1px solid $light-gray;
   background-color: $white;
 
