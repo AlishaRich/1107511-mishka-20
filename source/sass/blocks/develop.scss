@@ -1,8 +1,29 @@
+.develop {
+  display: flex;
+  align-items: center;
+}
+
 .develop__text {
-  padding: 0 25px 0 0;
+  padding: 13px 28px 0 0;
   font-family: $main-font;
   font-size: 19px;
   line-height: 18px;
 
   @include font;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 28px 0 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 28px 0 1px;
+  }
+}
+
+.develop__button {
+  margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+  }
 }

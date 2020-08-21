@@ -15,13 +15,13 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto auto;
-    margin: 0 50px 100px;
+    margin: 0 50px 106px;
   }
 }
 
 .video__title {
   width: 156px;
-  padding: 0 0 10px 90px;
+  padding: 0 0 11px 90px;
   font-family: $main-font;
   font-size: 17px;
   line-height: 24px;
@@ -31,7 +31,7 @@
   @media (min-width: $tablet-width) {
     order: 2;
     width: 340px;
-    margin: 35px 0 0 16px;
+    margin: 42px 0 0 16px;
     font-size: 20px;
   }
 
@@ -41,13 +41,13 @@
     width: 178px;
     align-self: end;
     padding: 0;
-    margin: 48px 0 0 60px;
+    margin: 76px 0 26px 60px;
   }
 }
 
 .video__text {
-  width: 226px;
-  padding: 9px 0 12px 34px;
+  width: 232px;
+  padding: 17px 0 12px 34px;
   font-family: $main-font;
   font-size: 13px;
   line-height: 24px;
@@ -57,8 +57,9 @@
 
   @media (min-width: $tablet-width) {
     order: 3;
-    width: 619px;
-    margin: 13px 0 23px 6px;
+    width: 627px;
+    margin: 0 0 0 6px;
+    padding: 12px 0 12px 34px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -67,13 +68,14 @@
     grid-column: 2/3;
     grid-row: 2/3;
     width: 288px;
-    padding: 49px 0 0 60px;
+    padding: 0 0 0 60px;
     margin: 0;
   }
 }
 
 .video__film {
   @media (min-width: $tablet-width) {
+    font-size: 0;
     order: 1;
     display: block;
     margin: 0;
@@ -104,11 +106,12 @@
 .video__button-buy {
   display: block;
   width: 192px;
-  margin: 0 auto;
+  margin: 29px auto 0;
   font-family: $main-font;
   font-size: 17px;
   line-height: 16px;
-  padding: 16px 18px;
+  padding: 16px 7px 16px 8px;
+  letter-spacing: 1px;
 
 
   @include button-text;
@@ -119,11 +122,13 @@
     width: 584px;
     padding: 16px 207px;
     margin-bottom: 45px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 230px;
-    padding: 18px 30px;
+    margin: 19px auto 51px;
+    padding: 16px 30px;
     grid-column: 2/3;
     grid-row: 3/4;
     align-self: center;

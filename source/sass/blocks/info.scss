@@ -15,19 +15,19 @@
   font-family: $main-font;
   font-size: 25px;
   line-height: 30px;
-  margin: 0 0 83px 0;
+  margin: 4px 0 83px 1px;
 
   @include font;
 
   @media (min-width: $tablet-width) {
-    padding: 21px 0 18px 17px;
+    padding: 22px 0 14px 20px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 24px 0 18px 16px;
-    margin: 0 0 84px 0;
+    padding: 34px 0 18px 22px;
+    margin: 0 0 77px 0;
     font-size: 53px;
     line-height: 57px;
   }

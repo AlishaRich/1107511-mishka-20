@@ -5,31 +5,31 @@
         <title>HTML Academy: Мишка</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Pixel Glass -->
-          <style>
+        <style>
             HTML {
-              background-repeat: no-repeat;
-              background-position:  50% 0;
-              /* По умолчанию показывается мобильный макет */
-              background-image: url("../preview/mishka-index-mobile.jpg");
+                background-repeat: no-repeat;
+                background-position: 50% 0;
+                /* По умолчанию показывается мобильный макет */
+                background-image: url("../preview/Mobile-index.png");
             }
             /* Планшет */
-            @media ( min-width: 768px ) {
-              HTML {
-                /* Планшетный макет */
-                background-image: url("../preview/mishka-index-tablet.jpg");
-              }
+            @media (min-width: 768px) {
+                HTML {
+                    /* Планшетный макет */
+                    background-image: url("../preview/Tablet-index.png");
+                }
             }
             /* Десктоп */
-            @media ( min-width: 1150px ) {
-              HTML {
-                /* Десктопный макет */
-                background-image: url("../preview/mishka-index-desktop.jpg");
-              }
+            @media (min-width: 1150px) {
+                HTML {
+                    /* Десктопный макет */
+                    background-image: url("../preview/Desktop-index.png");
+                }
             }
-          </style>
-          <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
-            <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
-          <!-- // Pixel Glass -->
+        </style>
+        <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css" />
+        <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
+        <!-- // Pixel Glass -->
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
@@ -58,30 +58,68 @@
                 </button>
                 <ul class="main-nav__list nav-list nav-list-left">
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="catalog.html">Каталог товаров</a>
+                        <a class="nav-list__link nav-list__link--catalog" href="catalog.html">Каталог товаров</a>
                     </li>
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="form.html">Вязание на заказ</a>
+                        <a class="nav-list__link nav-list__link--order" href="form.html">Вязание на заказ</a>
                     </li>
                 </ul>
                 <ul class="main-nav__list nav-list nav-list-right">
                     <li class="nav-list__item">
-                        <a class="nav-list__link nav-list__link--search" href="#"><svg class="nav-list__search-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                          <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
-                        </svg><span class="nav-list__search-text">Поиск по сайту<span></a>
+                        <a class="nav-list__link nav-list__link--search" href="#">
+                            <svg
+                                class="nav-list__search-svg"
+                                version="1.1"
+                                id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                width="17.6px"
+                                height="17.6px"
+                                viewBox="-0.8 -0.8 17.6 17.6"
+                                enable-background="new -0.8 -0.8 17.6 17.6"
+                                xml:space="preserve"
+                            >
+                                <path
+                                    fill="#231F20"
+                                    d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"
+                                />
+                            </svg>
+                            <span class="nav-list__search-text">Поиск по сайту</span>
+                        </a>
                     </li>
                     <li class="nav-list__item">
-                        <a class="nav-list__link nav-list__link--basket" href="#"><svg class="nav-list__basket-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-                        <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-                      </svg>Корзина: пока пуста</a>
+                        <a class="nav-list__link nav-list__link--basket" href="#">
+                            <svg
+                                class="nav-list__basket-svg"
+                                version="1.1"
+                                id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                width="20.294px"
+                                height="18.849px"
+                                viewBox="264.205 370.961 20.294 18.849"
+                                enable-background="new 264.205 370.961 20.294 18.849"
+                                xml:space="preserve"
+                            >
+                                <path
+                                    fill="#231F20"
+                                    d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"
+                                />
+                            </svg>
+                            Корзина: пока пуста
+                        </a>
                     </li>
                 </ul>
                 <ul class="main-nav__list nav-list nav-list-bottom">
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Новые поступления</a>
+                        <a class="nav-list__link nav-list__link--new" href="#">Новые поступления</a>
                     </li>
                     <li class="nav-list__item">
-                        <a class="nav-list__link" href="#">Распродажа</a>
+                        <a class="nav-list__link nav-list__link--sale" href="#">Распродажа</a>
                     </li>
                 </ul>
                 <span class="main-nav__delivery">Бесплатная доставка по России</span>
@@ -113,17 +151,23 @@
                     <h3 class="product-card__subtitle">ТОВАР НЕДЕЛИ</h3>
                     <p class="product-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
                     <dl class="product-card__info product-feature">
-                        <div class="product-feature__item"><dt class="product-feature__type">Цвет:</dt>
-                        <dd class="product-feature__data product-feature__data--first">«Тиффани»/серый</dd></div>
-                        <div class="product-feature__item"><dt class="product-feature__type">Диаметр:</dt>
-                        <dd class="product-feature__data product-feature__data--second">25 см</dd></div>
-                        <div class="product-feature__item"><dt class="product-feature__type">Высота:</dt>
-                        <dd class="product-feature__data product-feature__data--last">15 см</dd></div>
+                        <div class="product-feature__item">
+                            <dt class="product-feature__type">Цвет:</dt>
+                            <dd class="product-feature__data product-feature__data--first">«Тиффани»/серый</dd>
+                        </div>
+                        <div class="product-feature__item">
+                            <dt class="product-feature__type">Диаметр:</dt>
+                            <dd class="product-feature__data product-feature__data--second">25 см</dd>
+                        </div>
+                        <div class="product-feature__item">
+                            <dt class="product-feature__type">Высота:</dt>
+                            <dd class="product-feature__data product-feature__data--last">15 см</dd>
+                        </div>
                     </dl>
                     <picture class="product-card__photo">
-                    <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-                    <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" />
+                        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg" />
+                        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg" />
+                        <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" />
                     </picture>
                     <p class="product-card__price">Цена: 990 руб.</p>
                     <a class="product-card__button" href="#">ЗАКАЗАТЬ</a>
@@ -143,8 +187,8 @@
             <article class="review container">
                 <h2 class="review__title">Отзывы</h2>
                 <p class="review__text">
-                    Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а
-                    также набирают больше лайков!
+                    Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более
+                    стильными, а также набирают больше лайков!
                 </p>
                 <p class="review__author">Анастасия Красильникова</p>
                 <p class="review__contact">@misssssiskras</p>
@@ -191,16 +235,20 @@
             <section class="contacts container">
                 <h2 class="contacts__title">Контакты</h2>
                 <dl class="contacts__info contact">
-                    <div class="contact__item"><dt class="contact__type">e-mail:</dt>
-                    <dd class="contact__data contact__data--first">info@mimimishkashop.ru</dd></div>
-                    <div class="contact__item"><dt class="contact__type">адрес</dt>
-                    <dd class="contact__data contact__data--second">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</dd></div>
+                    <div class="contact__item">
+                        <dt class="contact__type">e-mail:</dt>
+                        <dd class="contact__data contact__data--first">info@mimimishkashop.ru</dd>
+                    </div>
+                    <div class="contact__item">
+                        <dt class="contact__type">адрес</dt>
+                        <dd class="contact__data contact__data--second">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</dd>
+                    </div>
                 </dl>
                 <!-- iframe src="" width="322" height="457"></iframe -->
                 <picture class="map">
-                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-                <img src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, дом 19/8" />
+                    <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg" />
+                    <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg" />
+                    <img src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, дом 19/8" />
                 </picture>
                 <a class="contacts__button-mail" href="#">Напишите нам</a>
             </section>

@@ -6,7 +6,7 @@
 
 .order__text {
   width: 260px;
-  padding: 22px 0 24px 0;
+  padding: 17px 0 30px 0;
   font-family: $main-font;
   font-size: 13px;
   line-height: 24px;
@@ -16,8 +16,7 @@
 
   @media (min-width: $tablet-width) {
     width: 667px;
-    margin: 57px 50px 38px 30px;
-    padding: 20px;
+    margin: 54px auto 50px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -25,5 +24,6 @@
   @media (min-width: $desktop-width) {
     display: block;
     width: 702px;
+    margin: 126px auto 20px;
   }
 }
