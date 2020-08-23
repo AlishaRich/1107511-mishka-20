@@ -3,7 +3,6 @@
 
   font-family: $main-font;
   background-color: $gray;
-  outline: 1px solid aqua;
 }
 
 .page-footer__logo {
@@ -11,20 +10,21 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 21px 0 0 20px;
+    padding: 19px 0 0 20px;
   }
 }
 
 .page-footer__copyright {
-  margin: 0 auto;
+  margin: 0;
+  padding: 5px 5px 0 39px;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 0 0 12px;
+    padding: 6px 5px 0 32px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 12px 0 0 159px;
+    padding: 5px 0 0 159px;
   }
 }
 
