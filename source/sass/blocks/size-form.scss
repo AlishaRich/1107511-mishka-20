@@ -1,14 +1,3 @@
-.size {
-  display: flex;
-  width: 260px;
-  margin: 0 auto 31px;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    width: 350px;
-  }
-}
-
 .size-form__label {
   display: block;
   padding: 15px 22px;

@@ -1,10 +1,10 @@
 .card {
-  outline: 1px solid red;
+  outline: 1px solid #ececec;
   margin: 0 0 29px 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    margin: 0 0 54px 0;
+    margin: 0 0 53px 0;
     grid-template-columns: 335px 335px;
     grid-auto-rows: max-content max-content auto;
   }
@@ -17,10 +17,24 @@
 }
 
 .card__image {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 0;
     grid-column: 1/2;
     grid-row: 1/4;
+  }
+}
+
+.card__image img {
+  @media (min-width: $tablet-width) {
+    width: 335px;
+    height: 335px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
   }
 }
 
@@ -38,7 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 23px 25px 5px 27px;
+    margin: 27px 25px 5px 27px;
   }
 }
 
@@ -62,6 +76,7 @@
 }
 
 .card__wrapper {
+  position: relative;
   display: flex;
   margin: 41px 0 0 28px;
 
@@ -74,6 +89,25 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.card__wrapper::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  width: 204px;
+  height: 1px;
+  background-color: #ececec;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    top: -23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+    left: 27px;
   }
 }
 

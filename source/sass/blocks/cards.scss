@@ -3,13 +3,13 @@
   margin: 30px 30px 31px;
 
   @media (min-width: $tablet-width) {
-    margin: 84px 51px 30px;
+    margin: 66px 51px 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    margin: 154px 0 59px;
+    margin: 129px 0 59px;
   }
 }
 
@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 24px 25px 4px 26px;
+    margin: 27px 25px 4px 26px;
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 24px 69px 5px 28px;
+    margin: 27px 69px 5px 28px;
   }
 }
 

@@ -2,10 +2,16 @@
   @include list;
 
   display: flex;
-  margin: 0 auto 28px;
+  padding: 0 0 22px 60px;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    margin: 27px auto 0;
+    padding: 21px 0 0 7px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 21px 0 0 71px;
   }
 }
 

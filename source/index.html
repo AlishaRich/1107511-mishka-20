@@ -35,7 +35,13 @@
     <body>
         <header class="page-header container">
             <nav class="main-nav">
-                <a class="page-header__logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка" /></a>
+                <a class="page-header__logo">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+                </picture>
+                </a>
                 <button class="main-nav__toggle" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                     <svg
@@ -56,7 +62,7 @@
                         <rect y="12" fill="#231F20" width="19.958" height="2" />
                     </svg>
                 </button>
-                <ul class="main-nav__list nav-list nav-list-left">
+                <ul class="main-nav__list nav-list nav-list--left">
                     <li class="nav-list__item">
                         <a class="nav-list__link nav-list__link--catalog" href="catalog.html">Каталог товаров</a>
                     </li>
@@ -64,7 +70,7 @@
                         <a class="nav-list__link nav-list__link--order" href="form.html">Вязание на заказ</a>
                     </li>
                 </ul>
-                <ul class="main-nav__list nav-list nav-list-right">
+                <ul class="main-nav__list nav-list nav-list--right">
                     <li class="nav-list__item">
                         <a class="nav-list__link nav-list__link--search" href="#">
                             <svg
@@ -114,7 +120,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="main-nav__list nav-list nav-list-bottom">
+                <ul class="main-nav__list nav-list nav-list--bottom">
                     <li class="nav-list__item">
                         <a class="nav-list__link nav-list__link--new" href="#">Новые поступления</a>
                     </li>
@@ -145,8 +151,8 @@
                     </ul>
                 </div>
             </div>
-            <section class="product-section container">
-                <div class="product-section__card product-card">
+            <section class="product-section">
+                <div class="product-section__card product-card container">
                     <h2 class="product-card__title">Вязаные корзинки</h2>
                     <h3 class="product-card__subtitle">ТОВАР НЕДЕЛИ</h3>
                     <p class="product-card__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -164,11 +170,13 @@
                             <dd class="product-feature__data product-feature__data--last">15 см</dd>
                         </div>
                     </dl>
-                    <picture class="product-card__photo">
-                        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg" />
-                        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg" />
-                        <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" />
+                    <p class="product-card__photo" >
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@1x.jpg 2x">
+                        <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
                     </picture>
+                    </p>
                     <p class="product-card__price">Цена: 990 руб.</p>
                     <a class="product-card__button" href="#">ЗАКАЗАТЬ</a>
                 </div>
@@ -184,7 +192,8 @@
                     <li class="advantages__item advantages__item--pack">Поставляется в подарочной упаковке</li>
                 </ul>
             </section>
-            <article class="review container">
+            <article class="review-section">
+              <div class="review container">
                 <h2 class="review__title">Отзывы</h2>
                 <p class="review__text">
                     Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более
@@ -231,6 +240,7 @@
                     </button>
                 </div>
                 <a class="review__button-feedback" href="#">Написать</a>
+              </div>
             </article>
             <section class="contacts container">
                 <h2 class="contacts__title">Контакты</h2>
@@ -245,11 +255,13 @@
                     </div>
                 </dl>
                 <!-- iframe src="" width="322" height="457"></iframe -->
-                <picture class="map">
-                    <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg" />
-                    <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg" />
-                    <img src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, дом 19/8" />
+                <p class="contacts__map">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                    <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, дом 19/8">
                 </picture>
+                </p>
                 <a class="contacts__button-mail" href="#">Напишите нам</a>
             </section>
             <div class="pop-up visually-hidden">

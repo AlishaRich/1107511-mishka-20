@@ -1,5 +1,4 @@
 .contacts {
-  outline: 1px solid lime;
   padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
@@ -64,21 +63,27 @@
   }
 }
 
-.map img {
+.contacts__map {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+}
+
+.contacts__map img {
   margin: 34px 0 36px;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 457px;
     margin: 31px 0 50px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 527px;
+    height: 457px;
     margin: 0;
-  }
-}
-
-.map {
-  @media (min-width: $desktop-width) {
-    grid-column: 2/3;
-    grid-row: 1/4;
   }
 }
