@@ -8,6 +8,15 @@
 .page-footer__logo {
   display: none;
 
+  &:hover {
+    fill: $aqua;
+  }
+
+  &:active {
+    fill: $aqua;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
     padding: 19px 0 0 20px;

@@ -15,6 +15,17 @@
   }
 }
 
+.social-list__link {
+  &:hover {
+    fill: $aqua;
+  }
+
+  &:active {
+    fill: $aqua;
+    opacity: 0.3;
+  }
+}
+
 .social-list__item:not(:last-child) {
   margin-right: 40px;
 }

@@ -157,6 +157,14 @@
   border: 2px solid #444444;
   border-radius: 20px;
 
+  &:hover {
+    border: 2px solid $salad;
+  }
+
+  &:active {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     margin-top: -13px;
@@ -207,6 +215,14 @@
   width: 38px;
   height: 38px;
   border: 2px solid #444444;
+
+  &:hover {
+    border: 2px solid $salad;
+  }
+
+  &:active {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -348,6 +364,19 @@
   border: none;
   border-bottom: 2px solid $black;
 
+  &:hover {
+    border-bottom: 2px solid $salad;
+  }
+
+  &:active {
+    border-bottom: 2px solid $salad;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $salad;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: inline;
     padding: 0;
@@ -453,6 +482,19 @@
   height: 142px;
   margin: 5px 0 0 0;
   padding: 14px;
+
+  &:hover {
+    border: 2px solid $salad;
+  }
+
+  &:active {
+    border: 2px solid $salad;
+  }
+
+  &:focus {
+    border: 2px solid $salad;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 127px;

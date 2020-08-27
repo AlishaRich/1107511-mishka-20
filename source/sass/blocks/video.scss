@@ -1,6 +1,6 @@
 .video {
   position: relative;
-  outline: 1px solid #ececec;
+  outline: 1px solid $light-gray;
   margin: 0 30px 58px;
   padding: 8px 0 32px 0;
 
@@ -113,6 +113,26 @@
   left: 80px;
   cursor: pointer;
 
+  &:hover {
+    width: 121px;
+    height: 92px;
+    left: 70px;
+    background-size: 100%;
+  }
+
+  &:active {
+    width: 121px;
+    height: 92px;
+    left: 80px;
+    background-size: 80%;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 102px;
     height: 78px;
@@ -120,6 +140,21 @@
     position: absolute;
     top: 190px;
     left: 283px;
+
+    &:hover {
+      width: 122px;
+      height: 94px;
+      left: 273px;
+      background-size: 100%;
+    }
+
+    &:active {
+      width: 122px;
+      height: 94px;
+      left: 283px;
+      background-size: 80%;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -129,6 +164,21 @@
     position: absolute;
     top: 190px;
     left: 291px;
+
+    &:hover {
+      width: 121px;
+      height: 92px;
+      left: 281px;
+      background-size: 100%;
+    }
+
+    &:active {
+      width: 121px;
+      height: 92px;
+      left: 291px;
+      background-size: 80%;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -145,6 +195,15 @@
 
   @include button-text;
   @include button-view;
+
+  &:hover {
+    color: $white;
+    background: linear-gradient(0deg, #444444, #444444);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     order: 4;
