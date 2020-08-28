@@ -41,16 +41,16 @@
     box-shadow: none;
     border-bottom: 1px solid $light-green;
 
-  &:hover {
-    color: $aqua;
-    box-shadow: none;
-    border-bottom: 1px solid $aqua;
-  }
+    &:hover {
+      color: $aqua;
+      box-shadow: none;
+      border-bottom: 1px solid $aqua;
+    }
 
-  &:active {
-    color: $aqua;
-    box-shadow: none;
-    border-bottom: 1px solid rgba(70, 193, 174, 0.1);
+    &:active {
+      color: $aqua;
+      box-shadow: none;
+      border-bottom: 1px solid rgba(70, 193, 174, 0.1);
     }
   }
 
