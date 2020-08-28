@@ -3,7 +3,7 @@
   margin: 30px 30px 31px;
 
   @media (min-width: $tablet-width) {
-    margin: 66px 51px 30px;
+    margin: 66px 51px 509px; /*margin: 66px 51px 30px;*/
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +24,7 @@
 }
 
 .cards__item:last-child .card__title {
-  margin: 21px 28px 8px;
+  margin: 24px 27px 8px;
 
   @media (min-width: $tablet-width) {
     margin: 28px 69px 6px 31px;

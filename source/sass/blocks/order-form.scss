@@ -58,6 +58,20 @@
   @include button-text;
   @include button-view;
 
+  &:hover {
+    color: $white;
+    background: linear-gradient(0deg, #444444, #444444);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 230px;
     margin: 0;

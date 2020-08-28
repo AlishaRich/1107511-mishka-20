@@ -3,10 +3,18 @@
   padding: 15px 22px;
   width: 82px;
   height: 52px;
-  border: 2px solid #ececec;
+  border: 2px solid $light-gray;
   cursor: pointer;
 
   @include button-text;
+
+  &:hover {
+    border: 2px solid $dark-gray;
+  }
+
+  &:active {
+    border: 2px solid $light-green;
+  }
 
   @media (min-width: $tablet-width) {
     width: 112px;
@@ -28,8 +36,26 @@
   @include button-text;
   color: #ffffff;
 
+  &:hover {
+    color: $white;
+    background: linear-gradient(0deg, #444444, #444444);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 350px;
     padding: 20px 112px 16px;
   }
+}
+
+.size-form__input:checked ~ .size-form__label {
+  border: 2px solid $light-green;
 }
