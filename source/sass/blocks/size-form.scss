@@ -55,3 +55,7 @@
     padding: 20px 112px 16px;
   }
 }
+
+.size-form__input:checked ~ .size-form__label {
+  border: 2px solid $light-green;
+}
