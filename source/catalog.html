@@ -34,7 +34,7 @@
     </head>
     <body>
         <header class="page-header container">
-            <nav class="main-nav">
+            <nav class="main-nav main-nav--nojs">
                 <a class="page-header__logo" href="index.html">
                   <picture>
                     <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -44,23 +44,6 @@
                 </a>
                 <button class="main-nav__toggle" type="button">
                     <span class="visually-hidden">Открыть меню</span>
-                    <svg
-                        version="1.1"
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        width="19.958px"
-                        height="14px"
-                        viewBox="0 0 19.958 14"
-                        enable-background="new 0 0 19.958 14"
-                        xml:space="preserve"
-                    >
-                        <rect fill="#231F20" width="19.958" height="2" />
-                        <rect y="6" fill="#231F20" width="19.958" height="2" />
-                        <rect y="12" fill="#231F20" width="19.958" height="2" />
-                    </svg>
                 </button>
                 <ul class="main-nav__list nav-list nav-list--left">
                     <li class="nav-list__item">
@@ -197,24 +180,27 @@
                 <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                 <a class="video__button-buy" href="#">Сделать заказ</a>
             </section>
-            <div class="pop-up visually-hidden">
+            <div class="popup-wrapper visually-hidden">
+              <button class="popup-wrapper__button popup-wrapper__button--catalog" type="button">Закрыть</button>
+            <div class="pop-up pop-up--catalog">
                 <h2 class="pop-up__title">Добавить в&nbsp;корзину</h2>
                 <p class="pop-up__text">Выберите размер:</p>
                 <form class="pop-up__form size-form" action="https://echo.htmlacademy.ru" method="get">
                     <ul class="pop-up__list size">
                         <li class="size__item">
-                            <label class="size-form__label"><input class="size-form__input visually-hidden" type="radio" name="size" value="small" />S</label>
+                            <input class="size-form__input visually-hidden" id="small" type="radio" name="size" value="small" checked /><label for="small" class="size-form__label">S</label>
                         </li>
                         <li class="size__item">
-                            <label class="size-form__label"><input class="size-form__input visually-hidden" type="radio" name="size" value="middle" />M</label>
+                            <input class="size-form__input visually-hidden" id="middle" type="radio" name="size" value="middle" /><label for="middle" class="size-form__label">M</label>
                         </li>
                         <li class="size__item">
-                            <label class="size-form__label"><input class="size-form__input visually-hidden" type="radio" name="size" value="large" />L</label>
+                            <input class="size-form__input visually-hidden" id="large" type="radio" name="size" value="large" /><label for="large" class="size-form__label">L</label>
                         </li>
                     </ul>
                     <button class="size-form__button-add" type="submit">Добавить</button>
                 </form>
             </div>
+          </div>
         </main>
         <footer class="page-footer">
             <div class="page-footer__container container">
@@ -362,5 +348,9 @@
                 </p>
             </div>
         </footer>
+
+        <script src="js/main-nav.js"></script>
+        <script src="js/popup-catalog.js"></script>
+
     </body>
 </html>

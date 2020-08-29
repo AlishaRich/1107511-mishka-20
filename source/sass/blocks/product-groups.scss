@@ -15,6 +15,7 @@
 
 .product-groups__link {
   display: block;
+  position: relative;
   padding: 24px 160px 31px 29px;
   font-family: $main-font;
   font-size: 19px;
@@ -23,14 +24,27 @@
   @include font;
   color: $white;
 
+  &:hover {
+    padding-bottom: 36px;
+    bottom: 5px;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 26px 167px 34px 36px;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      padding-bottom: 39px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 25px 350px 34px 37px;
+
+    &:hover {
+      padding-bottom: 39px;
+    }
   }
 }
 
