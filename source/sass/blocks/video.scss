@@ -1,6 +1,6 @@
 .video {
   position: relative;
-  outline: 1px solid $light-gray;
+  border: 1px solid $light-gray;
   margin: 0 30px 58px;
   padding: 8px 0 32px 0;
 
@@ -28,6 +28,7 @@
 }
 
 .video__title {
+  position: relative;
   width: 156px;
   padding: 0 0 11px 90px;
   font-family: $main-font;
@@ -228,5 +229,26 @@
     grid-column: 2/3;
     grid-row: 3/4;
     align-self: center;
+  }
+}
+
+.video__title::before {
+  content: "";
+  position: absolute;
+  bottom: 22px;
+  left: 34px;
+  width: 32px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-video.svg");
+
+  @media (min-width: $tablet-width) {
+    bottom: 13px;
+    left: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 76px;
+    left: 2px;
   }
 }

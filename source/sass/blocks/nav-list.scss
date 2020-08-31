@@ -66,11 +66,11 @@
   @include font;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba(68, 68, 68, 0.6);
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(68, 68, 68, 0.3);
   }
 
   @media (min-width: $tablet-width) {
@@ -150,7 +150,7 @@
 
 .nav-list__basket-svg {
   margin: 2px 21px -2px -42px;
-  opacity: 0.2;
+  fill: rgba(0, 0, 0, 0.2);
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -160,18 +160,16 @@
 }
 
 .nav-list__link:hover .nav-list__basket-svg {
-  fill: $light-green;
-  opacity: 1;
+  fill: rgba(99, 209, 187, 1);
 }
 
 .nav-list__link:active .nav-list__basket-svg {
-  fill: $light-green;
-  opacity: 0.3;
+  fill: rgba(99, 209, 187, 0.3);
 }
 
 .nav-list__search-svg {
   margin: 3px 22px -3px -40px;
-  opacity: 0.2;
+  fill: rgba(0, 0, 0, 0.2);
 
   @media (min-width: $tablet-width) {
     margin: 0 24px 0 -42px;
@@ -183,11 +181,9 @@
 }
 
 .nav-list__link:hover .nav-list__search-svg {
-  fill: $light-green;
-  opacity: 1;
+  fill: rgba(99, 209, 187, 1);
 }
 
 .nav-list__link:active .nav-list__search-svg {
-  fill: $light-green;
-  opacity: 0.3;
+  fill: rgba(99, 209, 187, 0.3);
 }
