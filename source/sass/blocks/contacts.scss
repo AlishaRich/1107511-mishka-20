@@ -61,6 +61,11 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  &:focus {
+    color: $white;
+    background: linear-gradient(0deg, #444444, #444444);
+  }
+
   @media (min-width: $tablet-width) {
     width: 230px;
     padding: 14px 27px;

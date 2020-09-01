@@ -3,12 +3,11 @@ var navButton = document.querySelector(".main-nav__toggle");
 var indexBuyButton = document.querySelector(".product-card__button");
 var popup = document.querySelector(".popup-wrapper");
 var catalogBuyButton = document.querySelectorAll(".card__button");
-// var ymaps = document.querySelector("map");
 
 mainNav.classList.remove("main-nav--nojs");
 mainNav.classList.add("main-nav--close");
 
-navButton.addEventListener("click", function(evt) {
+navButton.addEventListener("click", function() {
   if (mainNav.classList.contains("main-nav--close")) {
     mainNav.classList.remove("main-nav--close");
     mainNav.classList.add("main-nav--open");
@@ -19,29 +18,27 @@ navButton.addEventListener("click", function(evt) {
 });
 
 if (indexBuyButton) {
-indexBuyButton.addEventListener("click", function(evt) {
-  popup.classList.remove("visually-hidden")
+indexBuyButton.addEventListener("click", function() {
+  popup.classList.remove("popup-wrapper--hide");
 });
 }
 
 if (catalogBuyButton) {
-catalogBuyButton.forEach(function(evt){
-    evt.addEventListener("click", function(evt) {
-    popup.classList.remove("visually-hidden")});
+catalogBuyButton.forEach(function(evt) {
+    evt.addEventListener("click", function() {
+    popup.classList.remove("popup-wrapper--hide");
+  });
 });
 }
 
-if (popup) {
-  var closePopup = popup.querySelector(".popup-wrapper__button");
-}
-
-if (closePopup) {
-closePopup.addEventListener("click", function(evt) {
-  popup.classList.add("visually-hidden")
+document.addEventListener ("keydown", function() {
+  var key = event.key;
+  if (key === "Escape") {
+    popup.classList.add("popup-wrapper--hide");
+  }
 });
-}
 
-if (ymaps) {
+if (window.location.pathname === '/') {
 ymaps.ready(function () {
   var map = new ymaps.Map("map", {
     center: [59.938635, 30.323118],

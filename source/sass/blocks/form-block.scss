@@ -273,6 +273,16 @@
   }
 }
 
+.form-block__input:focus ~ .form-block__radio,
+.form-block__input:focus ~ .form-block__check {
+  outline: 2px solid $black;
+}
+
+.form-block__input:disabled ~ .form-block__radio,
+.form-block__input:disabled ~ .form-block__check {
+  border: 1px solid rgba(150, 140, 140, 0.5);
+}
+
 .form-block--text {
   margin-bottom: 31px;
 

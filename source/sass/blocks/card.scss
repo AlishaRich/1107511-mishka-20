@@ -184,8 +184,7 @@
   }
 
   &:focus {
-    border: none;
-    outline: none;
+    outline: 2px solid $black;
   }
 
   @media (min-width: $tablet-width) {

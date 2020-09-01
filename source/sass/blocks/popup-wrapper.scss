@@ -10,39 +10,6 @@
   left: 0;
 }
 
-.popup-wrapper__button {
-  position: relative;
-  width: 200px;
-  height: 36px;
-  top: 1000px;
-  border: 1px solid #c6c6c6;
-  box-shadow: 0 3px 10px rgba(0, 1, 1, 0.25);
-  background-color: $white;
-  font-family: $main-font;
-  text-transform: uppercase;
-  font-weight: bold;
-
-  &:focus {
-    outline: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    top: 1488px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 1068px;
-  }
-}
-
-.popup-wrapper__button--catalog {
-  top: 750px;
-
-  @media (min-width: $tablet-width) {
-    top: 1030px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 700px;
-  }
+.popup-wrapper--hide {
+  display: none;
 }

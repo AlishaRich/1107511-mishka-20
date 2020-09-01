@@ -4,7 +4,7 @@
 
 .nav-list__search-text {
   @media (min-width: $tablet-width) {
-    display: none; /*Позже скрыть с помощью visually-hidden*/
+    display: none;
   }
 }
 
@@ -83,7 +83,7 @@
   @media (min-width: $desktop-width) {
     padding: 0 0 0 55px;
     font-size: 17px;
-    font-weight: 24px;
+    line-height: 24px;
   }
 }
 
@@ -134,17 +134,24 @@
   }
 }
 
+.nav-list__link--new,
+.nav-list__link--sale {
+  @media (min-width: $desktop-width) {
+    font-family: $main-font;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
 .nav-list__link--new {
   @media (min-width: $desktop-width) {
-    padding: 3px 0 0 49px;
-    letter-spacing: -1px;
+    padding: 3px 0 0 50px;
   }
 }
 
 .nav-list__link--sale {
   @media (min-width: $desktop-width) {
-    padding: 3px 0 0 59px;
-    letter-spacing: -1px;
+    padding: 3px 0 0 64px;
   }
 }
 
