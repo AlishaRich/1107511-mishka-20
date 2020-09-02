@@ -38,7 +38,8 @@ document.addEventListener ("keydown", function() {
   }
 });
 
-if (window.location.pathname === '/') {
+if (window.location.pathname === "/" ||
+window.location.pathname === "/index.html") {
 ymaps.ready(function () {
   var map = new ymaps.Map("map", {
     center: [59.938635, 30.323118],
