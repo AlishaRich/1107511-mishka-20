@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 0 30px 36px;
+    padding: 65px 0 30px 36px;
     grid-template-columns: min-content auto auto;
     grid-template-rows: max-content max-content auto auto auto;
   }
@@ -166,6 +166,11 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    color: $white;
+    background: linear-gradient(0deg, #444444, #444444);
   }
 
   @media (min-width: $tablet-width) {

@@ -15,6 +15,7 @@
 }
 
 .card__image {
+  display: block;
   margin: 0;
   font-size: 0;
 
@@ -183,8 +184,7 @@
   }
 
   &:focus {
-    border: none;
-    outline: none;
+    outline: 2px solid $black;
   }
 
   @media (min-width: $tablet-width) {

@@ -14,8 +14,8 @@
 }
 
 .product-groups__link {
-  display: block;
-  padding: 24px 160px 31px 29px;
+  display: flex;
+  position: relative;
   font-family: $main-font;
   font-size: 19px;
   line-height: 24px;
@@ -23,29 +23,92 @@
   @include font;
   color: $white;
 
-  @media (min-width: $tablet-width) {
-    padding: 26px 167px 34px 36px;
-    font-size: 20px;
-    line-height: 30px;
+  &:hover {
+    transform: translateY(-5px);
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 25px 350px 34px 37px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 .product-groups__link--interior {
+  padding: 24px 33px 17px 30px;
   background-color: $light-green;
 
   &:hover {
     background-color: #59d5bc;
+    box-shadow: 0 5px 0 0 #59d5bc;
+  }
+
+  &:active {
+    background-color: #59d5bc;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 33px 28px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 35px 34px 37px;
   }
 }
 
 .product-groups__link--toy {
+  padding: 24px 20px 23px 30px;
   background-color: $green;
 
   &:hover {
     background-color: $aqua;
+    box-shadow: 0 5px 0 0 $aqua;
   }
+
+  &:active {
+    background-color: $aqua;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 33px 28px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 35px 34px 37px;
+  }
+}
+
+.product-groups__svg--interior {
+  fill: rgba(20, 144, 128, 0.5);
+  margin: 0 0 0 108px;
+
+  @media (min-width: $tablet-width) {
+    margin: 4px 0 0 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 4px 0 0 300px;
+  }
+}
+
+.product-groups__svg--toy {
+  fill: rgba(20, 144, 128, 0.5);
+  margin: -4px 0 0 115px;
+
+  @media (min-width: $tablet-width) {
+    margin: 6px 0 0 111px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 6px 0 0 298px;
+  }
+}
+
+.product-groups__link:hover .product-groups__svg--interior,
+.product-groups__link:hover .product-groups__svg--toy {
+  fill: rgba(20, 144, 128, 0.7);
+}
+
+.product-groups__link:active .product-groups__svg--interior,
+.product-groups__link:active .product-groups__svg--toy {
+  fill: rgba(20, 144, 128, 0.3);
 }

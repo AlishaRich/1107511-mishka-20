@@ -34,33 +34,16 @@
     </head>
     <body>
         <header class="page-header container">
-            <nav class="main-nav">
+            <nav class="main-nav main-nav--nojs">
                 <a class="page-header__logo" href="index.html">
-                  <picture>
-                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                  <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
-                </picture>
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" />
+                        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+                        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка" />
+                    </picture>
                 </a>
                 <button class="main-nav__toggle" type="button">
                     <span class="visually-hidden">Открыть меню</span>
-                    <svg
-                        version="1.1"
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        width="19.958px"
-                        height="14px"
-                        viewBox="0 0 19.958 14"
-                        enable-background="new 0 0 19.958 14"
-                        xml:space="preserve"
-                    >
-                        <rect fill="#231F20" width="19.958" height="2" />
-                        <rect y="6" fill="#231F20" width="19.958" height="2" />
-                        <rect y="12" fill="#231F20" width="19.958" height="2" />
-                    </svg>
                 </button>
                 <ul class="main-nav__list nav-list nav-list--left">
                     <li class="nav-list__item">
@@ -133,92 +116,88 @@
         <main class="page-main container">
             <ul class="cards">
                 <li class="cards__item card">
-                  <p class="card__image">
-                    <picture>
-                        <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-                        <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-                        <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Мягкая игрушка Зайчик">
-                    </picture>
-                  </p>
-                  <div class="card__border">
-                    <h2 class="card__title"><a class="card__link" href="#">Зайчик-попрыгайчик</a></h2>
-                    <p class="card__text">Рост 30 см, вес 200 г</p>
-                    <div class="card__wrapper">
-                        <p class="card__price">1 200 руб.</p>
-                        <button class="card__button" type="button"><span class="visually-hidden">Корзина</span></button>
+                    <a href="#" class="card__image">
+                        <picture>
+                            <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x" />
+                            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x" />
+                            <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Мягкая игрушка Зайчик" />
+                        </picture>
+                    </a>
+                    <div class="card__border">
+                        <h2 class="card__title"><a class="card__link" href="#">Зайчик-попрыгайчик</a></h2>
+                        <p class="card__text">Рост 30 см, вес 200 г</p>
+                        <div class="card__wrapper">
+                            <p class="card__price">1 200 руб.</p>
+                            <button class="card__button" type="button"><span class="visually-hidden">Корзина</span></button>
+                        </div>
                     </div>
-                  </div>
                 </li>
                 <li class="cards__item card">
-                  <p class="card__image">
-                    <picture>
-                        <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-                        <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-                        <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная корзинка для белья">
-                    </picture>
-                  </p>
-                  <div class="card__border">
-                    <h2 class="card__title"><a class="card__link" href="#">Корзинка для белья</a></h2>
-                    <p class="card__text">Диаметр 15 см, высота 10 см</p>
-                    <div class="card__wrapper">
-                        <p class="card__price card__price--margin">690 руб.</p>
-                        <button class="card__button" type="button"><span class="visually-hidden">Корзина</span></button>
+                    <a href="#" class="card__image">
+                        <picture>
+                            <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x" />
+                            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x" />
+                            <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная корзинка для белья" />
+                        </picture>
+                    </a>
+                    <div class="card__border">
+                        <h2 class="card__title"><a class="card__link" href="#">Корзинка для белья</a></h2>
+                        <p class="card__text">Диаметр 15 см, высота 10 см</p>
+                        <div class="card__wrapper">
+                            <p class="card__price card__price--margin">690 руб.</p>
+                            <button class="card__button" type="button"><span class="visually-hidden">Корзина</span></button>
+                        </div>
                     </div>
-                  </div>
                 </li>
                 <li class="cards__item card">
-                  <p class="card__image">
-                    <picture>
-                        <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-                        <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-                        <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная корзинка для игрушек">
-                    </picture>
-                  </p>
-                  <div class="card__border">
-                    <h2 class="card__title card__title--unique"><a class="card__link" href="#">Большая корзинка для игрушек</a></h2>
-                    <p class="card__text">Диаметр 30 см, высота 30 см</p>
-                    <div class="card__wrapper">
-                        <p class="card__price">1 500 руб.</p>
-                        <button class="card__button" type="button"><span class="visually-hidden">Корзина</span></button>
+                    <a href="#" class="card__image">
+                        <picture>
+                            <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x" />
+                            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x" />
+                            <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная корзинка для игрушек" />
+                        </picture>
+                    </a>
+                    <div class="card__border">
+                        <h2 class="card__title card__title--unique"><a class="card__link" href="#">Большая корзинка для игрушек</a></h2>
+                        <p class="card__text">Диаметр 30 см, высота 30 см</p>
+                        <div class="card__wrapper">
+                            <p class="card__price">1 500 руб.</p>
+                            <button class="card__button" type="button"><span class="visually-hidden">Корзина</span></button>
+                        </div>
                     </div>
-                  </div>
                 </li>
             </ul>
             <section class="video">
                 <h2 class="video__title">Процесс производства</h2>
                 <p class="video__film">
-                <picture>
-                    <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-                    <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс производства">
-                </picture>
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" />
+                        <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс производства" />
+                    </picture>
                 </p>
                 <button class="video__button-play" type="button"><span class="visually-hidden">Воспроизведение видео</span></button>
                 <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                 <a class="video__button-buy" href="#">Сделать заказ</a>
             </section>
-            <div class="pop-up visually-hidden">
-                <h2 class="pop-up__title">Добавить в&nbsp;корзину</h2>
-                <p class="pop-up__text">Выберите размер:</p>
-                <form class="pop-up__form size-form" action="https://echo.htmlacademy.ru" method="get">
-                    <ul class="pop-up__list size">
-                        <li class="size__item">
-                            <label class="size-form__label"><input class="size-form__input visually-hidden" type="radio" name="size" value="small" />S</label>
-                        </li>
-                        <li class="size__item">
-                            <label class="size-form__label"><input class="size-form__input visually-hidden" type="radio" name="size" value="middle" />M</label>
-                        </li>
-                        <li class="size__item">
-                            <label class="size-form__label"><input class="size-form__input visually-hidden" type="radio" name="size" value="large" />L</label>
-                        </li>
-                    </ul>
-                    <button class="size-form__button-add" type="submit">Добавить</button>
-                </form>
+            <div class="popup-wrapper popup-wrapper--hide">
+                <div class="pop-up pop-up--catalog">
+                    <h2 class="pop-up__title">Добавить в&nbsp;корзину</h2>
+                    <p class="pop-up__text">Выберите размер:</p>
+                    <form class="pop-up__form size-form" action="https://echo.htmlacademy.ru" method="get">
+                        <ul class="pop-up__list size">
+                            <li class="size__item"><input class="size-form__input visually-hidden" id="small" type="radio" name="size" value="small" checked /><label for="small" class="size-form__label">S</label></li>
+                            <li class="size__item"><input class="size-form__input visually-hidden" id="middle" type="radio" name="size" value="middle" /><label for="middle" class="size-form__label">M</label></li>
+                            <li class="size__item"><input class="size-form__input visually-hidden" id="large" type="radio" name="size" value="large" /><label for="large" class="size-form__label">L</label></li>
+                        </ul>
+                        <button class="size-form__button-add" type="submit">Добавить</button>
+                    </form>
+                </div>
             </div>
         </main>
         <footer class="page-footer">
             <div class="page-footer__container container">
-                <a class="page-footer__logo" href="#">
+                <a class="page-footer__logo" href="index.html">
                     <svg
                         version="1.1"
                         id="Layer_1"
@@ -362,5 +341,7 @@
                 </p>
             </div>
         </footer>
+
+        <script src="js/mishka.js"></script>
     </body>
 </html>

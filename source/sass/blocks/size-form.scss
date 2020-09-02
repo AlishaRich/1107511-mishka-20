@@ -46,8 +46,8 @@
   }
 
   &:focus {
-    border: none;
-    outline: none;
+    color: $white;
+    background: linear-gradient(0deg, #444444, #444444);
   }
 
   @media (min-width: $tablet-width) {
