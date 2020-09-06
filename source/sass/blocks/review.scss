@@ -8,7 +8,14 @@
     padding: 80px 50px 125px 45px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    background: url("../img/review@1x.jpg") 0 2% no-repeat;
+    background-image: url("../img/review@1x.jpg");
+    background-position: 0 2%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px 457px;
+    }
   }
 
   @media (min-width: $desktop-width) {

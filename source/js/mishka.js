@@ -1,8 +1,8 @@
-var mainNav = document.querySelector(".main-nav");
-var navButton = document.querySelector(".main-nav__toggle");
-var indexBuyButton = document.querySelector(".product-card__button");
-var popup = document.querySelector(".popup-wrapper");
-var catalogBuyButton = document.querySelectorAll(".card__button");
+const mainNav = document.querySelector(".main-nav");
+const navButton = document.querySelector(".main-nav__toggle");
+const indexBuyButton = document.querySelector(".product-card__button");
+const popup = document.querySelector(".popup-wrapper");
+const catalogBuyButton = document.querySelectorAll(".card__button");
 
 mainNav.classList.remove("main-nav--nojs");
 mainNav.classList.add("main-nav--close");
@@ -32,7 +32,7 @@ catalogBuyButton.forEach(function(evt) {
 }
 
 document.addEventListener ("keydown", function() {
-  var key = event.key;
+  const key = event.key;
   if (key === "Escape") {
     popup.classList.add("popup-wrapper--hide");
   }
@@ -41,7 +41,7 @@ document.addEventListener ("keydown", function() {
 if (window.location.pathname === "/" ||
 window.location.pathname === "/index.html") {
 ymaps.ready(function () {
-  var map = new ymaps.Map("map", {
+  const map = new ymaps.Map("map", {
     center: [59.938635, 30.323118],
     zoom: 17
   });
