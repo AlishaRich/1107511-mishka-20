@@ -133,27 +133,3 @@
     left: -112px;
   }
 }
-
-// .contacts__map::after {
-//   content: "";
-//   position: absolute;
-//   z-index: 6;
-//   top: 141px;
-//   left: 138px;
-//   width: 67px;
-//   height: 100px;
-//   background-image: url("../img/icon-map-pin.svg");
-//   background-repeat: no-repeat;
-//   background-position: 0% 0%;
-//   background-color: transparent;
-//
-//   @media (min-width: $tablet-width) {
-//     top: 142px;
-//     left: 362px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     top: 141px;
-//     left: 239px;
-//   }
-// }
