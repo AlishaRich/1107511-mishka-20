@@ -4,35 +4,12 @@
         <meta charset="utf-8" />
         <title>HTML Academy: Мишка</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Pixel Glass -->
-        <style>
-            HTML {
-                background-repeat: no-repeat;
-                background-position: 50% 0;
-                /* По умолчанию показывается мобильный макет */
-                background-image: url("../preview/Mobile-catalog.png");
-            }
-            /* Планшет */
-            @media (min-width: 768px) {
-                HTML {
-                    /* Планшетный макет */
-                    background-image: url("../preview/Tablet-catalog.png");
-                }
-            }
-            /* Десктоп */
-            @media (min-width: 1150px) {
-                HTML {
-                    /* Десктопный макет */
-                    background-image: url("../preview/Desktop-catalog.png");
-                }
-            }
-        </style>
-        <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css" />
-        <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
-        <!-- // Pixel Glass -->
         <link href="css/style.min.css" rel="stylesheet" />
     </head>
     <body>
+      <div style="display:none">
+        <include src="build/img/sprite.svg"></include>
+      </div>
         <header class="page-header container">
             <nav class="main-nav main-nav--nojs">
                 <a class="page-header__logo" href="index.html">
