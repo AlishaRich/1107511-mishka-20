@@ -11,8 +11,11 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-
-// Styles
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
+const pipeline = require("readable-stream").pipeline;
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
@@ -33,12 +36,22 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/*.html")
+    .pipe(posthtml([include()
+    ]))
+    .pipe(htmlmin())
     .pipe(gulp.dest("build"));
 }
 
 exports.html = html;
 
-// Server
+const jsmin = () => {
+  return pipeline(gulp.src("source/js/*.js"),
+    (uglify())
+    .pipe(gulp.dest("build/js"))
+  );
+}
+
+exports.jsmin = jsmin;
 
 const server = (done) => {
   sync.init({
@@ -54,8 +67,6 @@ const server = (done) => {
 
 exports.server = server;
 
-// Watcher
-
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
@@ -64,8 +75,6 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
-
-// Images
 
 const images = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -79,8 +88,6 @@ const images = () => {
 
 exports.images = images;
 
-//  Webp
-
 const convertWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
@@ -91,7 +98,7 @@ exports.webp = convertWebp;
 
 const sprite = () => {
   return gulp.src("source/img/sprite-*.svg")
-    .pipe(svgstore())
+    .pipe(svgstore({inlineSvg: true}))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 }
@@ -118,5 +125,5 @@ const clean = () => {
 exports.clean = clean;
 
 exports.build = gulp.series(
-  clean, copy, styles, images, convertWebp, sprite, html
+  clean, copy, styles, images, convertWebp, sprite, html, jsmin
 );
